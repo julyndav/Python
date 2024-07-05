@@ -81,7 +81,52 @@ By doing so, we can identify key factors to help the marketing department from Y
 
 # Analysis Overview:
 
-### Data Cleaning and Preparation:
+## Data Cleaning and Preparation:
+
+![Data_cleaning](https://github.com/julyndav/Python/blob/main/Business%20Analytics/Images/data%20cleaning1.png)
+
+<p></p>
+
+![Data_cleaning2](https://github.com/julyndav/Python/blob/main/Business%20Analytics/Images/dc2.png)
+
+Now that the data has been cleaned, data types are set and it was determined that there are no duplicates, analysis can start. 
+<br></br>
+
+
+## Product Analysis
+Questions to answer:
+
+1) How many people use it every day, week, and month?
+2) How many sessions are there per day? (One user might have more than one session.)
+3) What is the length of each session?
+4) What's the user retention rate?
+
+### 1) Visits daily, weekly monthly?
+<ul>
+<li>Visits table will be used for this part of the analysis</li>
+<li>Columns created for year, month, week values to determine activity usage.</li>
+<li>Averages will be used.</li> 
+<li>Coding will be separated into DAU(daily average users), WAU(weekly average users) and MAU(monthly average users)</li>
+</ul>
+<br></br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
