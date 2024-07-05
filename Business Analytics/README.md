@@ -2,7 +2,7 @@
 
 ## Project overview:
 
-This project will focus on using Cohort Analysis and Data Visualizations to explore the analystical side of business. This will incorporate data cleaning, data manipulation, exploratory analysis, cohort analysis and visualizations. Customer metrics were plotted and the finding interpreted along with providing insights and conclustions to back up reccomendations to marketing, sales and excutives on which marketing sources are worth futher investment and which ones should be scrapped. 
+This project will focus on using Cohort Analysis and Data Visualizations to explore the analytical side of business. This will incorporate data cleaning, data manipulation, exploratory analysis, user retention, sales analysis, customer life time values and visualizations. Customer metrics were plotted and the finding interpreted along with providing insights and conclustions to back up reccomendations to marketing, sales and excutives on which marketing sources are worth futher investment and which ones should be scrapped. 
 <br></br>
 
 ## Table of Contents:
@@ -41,16 +41,25 @@ This project will focus on using Cohort Analysis and Data Visualizations to expl
 | Start Ts |Session start date and time |
 | End Ts | session end date and time |
 | Source Id | Identifier of the ad source the user came from |
-<br>
-<b>The orders table (data on orders):</b><li>
-Uid — unique identifier of the user making an order<li>
-Buy Ts — order date and time<li>
-Revenue — Yandex.Afisha's revenue from the order<br>
+<p></p>
 
-<b>The costs table (data on marketing expenses):</b><li>
-source_id — ad source identifier<li>
-dt — date<li>
-costs — expenses on this ad source on this day
+### Orders table:
+| Variable | Purpose |
+| --- | --- |
+| Uid | Unique identifier of the user making an order |
+| Buy Ts | Order date and time |
+| Revenue | Revenue from the order |
+<p></p>
+
+### Costs table: 
+<i>Data on marketing expenses</i>
+| Variable | Purpose |
+| --- | --- |
+| Source_id | Ad source identifier |
+| dt | Date |
+| costs | Expenses for ad source |
+<p></p>
+<br></br>
 
 ## Analysis Steps:
 | Step |Description |
