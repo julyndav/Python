@@ -8,11 +8,11 @@ This project will focus on using Cohort Analysis and Data Visualizations to expl
 ## Table of Contents:
 [Jupyter Notebook](https://github.com/julyndav/Business_Analytics/blob/main/BA_Yandex-Afisha.ipynb)<br>
 [Data Visualizations](https://github.com/julyndav/Business_Analytics/tree/main/cohort_images)
+
 <br></br>
 
 
-
-### Skills Demostrated
+### Skills Demostrated:
 <ul>
 <li>Python (for data cleaning, data manipulation and exploratory analysis)</li>
 <li>Panda Libraries (for data visualizations)</li>
@@ -31,12 +31,16 @@ This project will focus on using Cohort Analysis and Data Visualizations to expl
 <br>
 
 ## Description of the data
-<b>The visits table:</b><li>
-Uid — user's unique identifier<li>
-Device — user's device<li>
-Start Ts — session start date and time<li>
-End Ts — session end date and time<li>
-Source Id — identifier of the ad source the user came from
+<p></p>
+
+### Visits table:
+| Variable | Purpose |
+| --- | --- |
+| Uid | User's unique identifier |
+| Device | User's device |
+| Start Ts |Session start date and time |
+| End Ts | session end date and time |
+| Source Id | Identifier of the ad source the user came from |
 <br>
 <b>The orders table (data on orders):</b><li>
 Uid — unique identifier of the user making an order<li>
