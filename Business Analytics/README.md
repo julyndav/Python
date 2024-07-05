@@ -148,8 +148,11 @@ Will need more research on whether people completely lose interest in what they 
 
 ### 4) User Retention
 Retention shows us how many users (in % out of registered) were active (had sessions) on a certain day/week/month after registration/first visit.
-To show the customer retention, this is where cohort analysis will be used.  First is to create
+To show the customer retention, this is where cohort analysis will be used.  First is to create Cohort month which shows the first time the User has visited. 
+This data will be used later in the coding process for Retention Rate and to create a heatmap as a visualization for this part of the analysis. 
 
+Getting the separate date elements will allow us to get the difference to create the 'cohort index'. It will show us when the user was acquired, how long they have been active and retained.
+Customers with an cohort index of 0(Conversion 0days), were acquired and active within the same month.
 
 
 
