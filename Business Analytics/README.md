@@ -101,7 +101,7 @@ Questions to answer:
 3) What is the length of each session?
 4) What's the user retention rate?
 
-### 1) Visits daily, weekly monthly?
+### 1) Visits daily, weekly monthly usage?
 <ul>
 <li>Visits table will be used for this part of the analysis</li>
 <li>Columns created for year, month, week values to determine activity usage.</li>
