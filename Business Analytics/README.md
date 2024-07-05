@@ -155,25 +155,3 @@ To show the customer retention, this is where cohort analysis will be used.  Fir
 
 
 
-
-<br>
-<br>
-<br>
-<br>
-
-
-From using cohort analysis, here a few snapshots.  <p>
-![Orders over time](https://github.com/julyndav/Business_Analytics/blob/main/cohort_images/order%20over%20time.png)
-<p>
-<p></p>
-To see how customer purchases have played out over time, lets take a peek at the LTV (Life Time Value) of the customer base:
-
-![Life Time Value](https://github.com/julyndav/Business_Analytics/blob/main/cohort_images/LTV.png)
-
-To end the project, a through conclusion was given with reccommendations. This was expanded on in the above Tableau Dashboard. 
-<br></br>
-
-## Brief Project Conclusion:
-#### <i>Full conclusion within the project notebook</i>
-*Overall Impression(s):Users get to the website and atleast make one purchase pretty much immediately. The ads are bringing in relevant users that want the product, but most users do not make multiple orders/visits and orders are small. Usally movie goers stay up to date on the latest and upcoming movies; it makes sense that their purchases would continue. Are customers not happy after their intial purchase?
-
