@@ -110,6 +110,45 @@ Questions to answer:
 </ul>
 <br></br>
 
+To determine users by month/year/week, the date value needs to be separated out into it's individual parts. This will be based off 
+of 'Start Ts' (start date and time variable).
+![Date_breakdown](https://github.com/julyndav/Python/blob/main/Business%20Analytics/Images/DAU1.png)
+<p></p>
+<br>
+
+Now that the date has been broken down, let's use it to find our overall averages. 
+![Overall_Averages](https://github.com/julyndav/Python/blob/main/Business%20Analytics/Images/averageusers_overall.png)
+<p></p>
+<br>
+
+To see the actual user average per day, the 'groupby' function will be used. 
+![DailyAU](https://github.com/julyndav/Python/blob/main/Business%20Analytics/Images/DAU_code.png)
+<p></p>
+<br>
+
+![DAU_graph](https://github.com/julyndav/Python/blob/main/Business%20Analytics/Images/Daily%20Average%20Users.png)
+
+The same code can be used to see the Average users per month and for the year with just a simple adjustment to the code.
+Second portion of code creates a visualization of the "DAU'. Viewing the Jupyter Notebook will allow you to see the process for weekly and monthly
+average users. 
+<br></br>
+
+### 2) Sessions per day?:
+![Session_day](https://github.com/julyndav/Python/blob/main/Business%20Analytics/Images/sess%20per%20user.png)
+
+<b>Insights: </b> Number of sessions and users are fairly close in size with number of sessions being slightly higher. This denotes that some users had more than one session. Numbers over 1.05 show that a few users have had more than one session. The brief overview of the number of daily sessions shows that 2018 was more established with almost double the user count. 2017 low numbers can be contributed to start up marketing efforts and the platform being new. Would like to know when the platform came online for a broader trend analysis.
+
+<br></br>
+### 3) Length of Session:
+Session length was determined by using Python to calculat that time between 'Start Ts' and 'End Ts'. Duration time was returned in seconds.
+<p></p>
+On average, a user spends 1 minute/60 seconds on the app. This time should be enough to find the event of interest, but most likely it will take more time to buy tickets through the Yandex.Afisha application. 
+Will need more research on whether people completely lose interest in what they have found, or go to other resources to buy a ticket there.
+<br></br>
+
+### 4) User Retention
+Retention shows us how many users (in % out of registered) were active (had sessions) on a certain day/week/month after registration/first visit.
+To show the customer retention, this is where cohort analysis will be used.  First is to create
 
 
 
@@ -117,19 +156,10 @@ Questions to answer:
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+<br>
+<br>
+<br>
+<br>
 
 
 From using cohort analysis, here a few snapshots.  <p>
