@@ -1,8 +1,14 @@
-# Business Analytics
+# Yandex Afisha Business Analysis
 
 ## Project overview:
 
+Yandex Afisha; an app and website that helps users find out about events like movie showings, exhibitions, gigs, concerts and buy tickets. The data has been collected from 2017 through 2018. The analysis will explore various customer, date and revenue attributes. Our objective is to incorporate data visualization techniques and business analysis tools to uncover patterns, correlations, and unique characteristics within the data sets.
+
 This project will focus on using Cohort Analysis and Data Visualizations to explore the analytical side of business. This will incorporate data cleaning, data manipulation, exploratory analysis, user retention, sales analysis, customer life time values and visualizations. Customer metrics were plotted and the finding interpreted along with providing insights and conclustions to back up reccomendations to marketing, sales and excutives on which marketing sources are worth futher investment and which ones should be scrapped. 
+
+By doing so, we can identify key factors to help the marketing department from Yandex make effective investments in marketing, have an overview of the effectiveness of current marketing efforts, get a visualization of return rates and other customer metrics.
+
+
 <br></br>
 
 ## Table of Contents:
@@ -65,14 +71,14 @@ This project will focus on using Cohort Analysis and Data Visualizations to expl
 | Step |Description |
 | --- | --- |
 | 1 | Create project description |
-| 2 | Import libraries |
+| 2 | Import/installing libraries |
 | 3 | Upload and analyize data |
 | 4 | Data cleaning and preparation |
 | 5 | Customer segmentation and analysis |
 | 6 | Determining Customer Retention Rate |
-| 7 | Sales Analysis |
-| 8 | Cohort Analysis including determining ROI |
-| 9 | Project Conclusion(s) |
+| 7 | Sales Analysis (conversion rate, purchase size, LTV |
+| 8 | Marketing Analysis (marketing costs, CAC, ROMI) |
+| 9 | Conclusion and Reccomendations |
 
 <br></br>
 
