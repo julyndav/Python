@@ -93,7 +93,7 @@ Now that the data has been cleaned, data types are set and it was determined tha
 <br></br>
 
 
-## Product Analysis
+# Product Analysis
 Questions to answer:
 
 1) How many people use it every day, week, and month?
@@ -152,13 +152,58 @@ Will need more research on whether people completely lose interest in what they 
 
 ### 4) User Retention
 Retention shows us how many users (in % out of registered) were active (had sessions) on a certain day/week/month after registration/first visit.
-To show the customer retention, this is where cohort analysis will be used.  First is to create Cohort month which shows the first time the User has visited. 
+To show the customer retention, this is where cohort analysis will be used. First is to create Cohort month which shows the first time the User has visited. 
 This data will be used later in the coding process for Retention Rate and to create a heatmap as a visualization for this part of the analysis. 
 
-Getting the separate date elements will allow us to get the difference to create the 'cohort index'. It will show us when the user was acquired, how long they have been active and retained.
-Customers with an cohort index of 0(Conversion 0days), were acquired and active within the same month.
+<b>Retention Analysis Steps:</b>
+1) Imported <b>datetime as dt</b> to work with dates.
+2) Applied a function to just have the year and month with the day defaulted to 1 (the first of the month).
+3) Created 'cohort month' based on first month of user's visit.
+4) Created a column index for month cohort.
 
+Getting the separate date elements will allow the creation of the index. It will show us when the user was acquired, how long they have been active and retained.
 
+![Retention_Code](https://github.com/julyndav/Python/blob/main/Business%20Analytics/Images/retention%20code.png)
+<i>Customers with an cohort index of 0(Conversion 0d), were acquired and active within the same month</i>
+<p></p>
+
+5) Now to create the pivot table that is key in getting the heatmap visual for retention. Cohort months will act as the 'rows' with the cohort index as the column labels and values based on Uid (user id) totals.
+6) The Uid totals are converted into a percentage, the results are displayed as a pivot table
+
+![Retent_pt](https://github.com/julyndav/Python/blob/main/Business%20Analytics/Images/retention%20table.png)
+<p></p>
+
+7) To display the heatmap; custom colors were selected and values formatted to show percentages appropriatley.
+
+   ![heatmap](https://github.com/julyndav/Python/blob/main/Business%20Analytics/Images/retention%20heatmap.png)
+   <p></p>
+
+### Insights: 
+The average retention rate from all cohorts decreased slowly over time. One of the few months to retain a somewhat steady user percentage was June. July, August and September faired better the the rest of the months as they were able to have a slightly higher average for most of the month. Towards the end of 2018 the rate had a declining trend.
+
+### Reccomendation:
+May 2018 had no registerable data. The data for May 2018 needs more attention to see what is going on and why the data collection period wasn't for the entire month.
+
+### Product Analysis Conclusion:
+Yandex.Afisha sees an average of 900 users daily with each users having around 1 session. The time spent on the site for that session is about 10 minutes. There was a significant spike in users around November 24th/Thanksgiving times which could be attributed to the holiday season. The 24th/25th of November is also one of the biggest shopping days of the year as a precursor to Christmas. Tickets may have been purchased as gifts but more user information would be need to to determine that. The spike in Users also coincides with an increase is session lenght to almost 18 minutes. The site my have slowed due to server traffice.
+One area of concern is the plunge in both users and session lenght that occured around March 31st. With such a sharp decrease in both users and session length; a few things may have occured. It could be a site crash, site maintenance or voluntary/involuntary site take down but again, more information would be need to make a solid conclusion.
+
+<br></br>
+# Sales
+In this section of the analysis, the 'visits' table that was customized for cohort analysis will be merged with the orders tables creating a new df (data frame) .
+
+### Sales Objective:
+1) How are customer purchasing items?
+2) How many orders do they make during a given period of time?
+3) What is the average purchase size?
+4) How much money do they bring? (LTV)
+
+### 1) Preferred way to purchase?:
+Once the tables were merged, the 'groupby' function was used on the 'Device' variable, the the 'revenue' was summed. The total revenue value was formatted to show
+millions.  To find the number of users per each device, the same method was used to determine the total users. 
+
+![Dev_users](https://github.com/julyndav/Python/blob/main/Business%20Analytics/Images/purchase%20how.png)
+<p></p>
 
 
 
