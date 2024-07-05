@@ -7,14 +7,11 @@ Yandex Afisha; an app and website that helps users find out about events like mo
 This project will focus on using Cohort Analysis and Data Visualizations to explore the analytical side of business. This will incorporate data cleaning, data manipulation, exploratory analysis, user retention, sales analysis, customer life time values and visualizations. Customer metrics were plotted and the finding interpreted along with providing insights and conclustions to back up reccomendations to marketing, sales and excutives on which marketing sources are worth futher investment and which ones should be scrapped. 
 
 By doing so, we can identify key factors to help the marketing department from Yandex make effective investments in marketing, have an overview of the effectiveness of current marketing efforts, get a visualization of return rates and other customer metrics.
-
-
 <br></br>
 
 ## Table of Contents:
 [Jupyter Notebook](https://github.com/julyndav/Business_Analytics/blob/main/BA_Yandex-Afisha.ipynb)<br>
 [Data Visualizations](https://github.com/julyndav/Business_Analytics/tree/main/cohort_images)
-
 <br></br>
 
 
@@ -82,7 +79,13 @@ By doing so, we can identify key factors to help the marketing department from Y
 
 <br></br>
 
-## Brief Analysis Overview:
+# Analysis Overview:
+
+### Data Cleaning and Preparation:
+
+
+
+
 
 From using cohort analysis, here a few snapshots.  <p>
 ![Orders over time](https://github.com/julyndav/Business_Analytics/blob/main/cohort_images/order%20over%20time.png)
