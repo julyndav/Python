@@ -144,6 +144,10 @@ Session length was determined by using Python to calculat that time between 'Sta
 <p></p>
 On average, a user spends 1 minute/60 seconds on the app. This time should be enough to find the event of interest, but most likely it will take more time to buy tickets through the Yandex.Afisha application. 
 Will need more research on whether people completely lose interest in what they have found, or go to other resources to buy a ticket there.
+
+![Session_length](https://github.com/julyndav/Python/blob/main/Business%20Analytics/Images/length%20of%20sess.png)
+
+<i> From unusally large spike of 0's, it seems to correlate with visitors that have 0 conversion days.</i>
 <br></br>
 
 ### 4) User Retention
