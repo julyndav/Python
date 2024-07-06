@@ -204,6 +204,149 @@ millions.  To find the number of users per each device, the same method was used
 
 ![Dev_users](https://github.com/julyndav/Python/blob/main/Business%20Analytics/Images/purchase%20how.png)
 <p></p>
+<br></br>
+
+### 2) Orders vs Time period:
+The visits table now comes into play as it already has the date brokendown into week and month, this will be used to compare the revenue vs. week/month.
+Again the 'grouby' function is empolyed to group the revenue data by weekly then monthly totals. 
+
+![Revenue vs Time](https://github.com/julyndav/Python/blob/main/Business%20Analytics/Images/revenue_vsTime.png)
+
+To see how many orders customers are making over time, cohort analysis will be used once again along with the heatmap visualization. 
+This involved creating a new table. After the required tables were merged, the resultant table was over 50K rows. For the orders cohort, number of buyers was calculated for each month, variables were grouped, cohort age was found and number of buyers for each cohort age was calculated. Once that was determined then a pivot table was created for the heatmap visualization. 
+
+<b>Insight: </b> There are generally only one order per cohort age. It isn't utnil age 5 that the number of orders starts to increase but that is mostly relegated to June 2017. August and September 2017 saw almost 1 1/2 orders per cohort age.
+<br></br>
+
+### 3) Average Purchase Size:
+More grouping is used on the previous table used to find orders vs time. The data was grouped by order month then the 'mean' was taken for the revenue. 
+If one wanted to, you could graph this to show the average purchase size for each month.  To find the overall average purchase size, a simple line of code was used buy taking the mean of 'Revenue' and rounding it to 2 decimal places.  
+
+#### Average Purchase Size =  5.0
+<br></br>
+
+### 4) LTV (Life Time Value)
+<ul>
+   <li>For each Uid(user id) we determine the first month an order was placed.</li>
+   <li>Next was to calculate the number of new buyers for each month.</li>
+   <li>Both are now combined into one table.</li>
+   <li>Group the table of orders by month of first purchase and month of purchase and sum up the revenue</li>
+   <li>A cohort table was then created and the cohort age calculated.</li>
+   <li>A new column was added to the above table for the ltv value by using the following code:
+       report1['ltv'] = report1['Revenue'] / report1['n_buyers']</li>
+   <li>Pivot table was then generated to graph the LTV heatmap from.</li>  
+</ul>
+   ![LTV](https://github.com/julyndav/Python/blob/main/Business%20Analytics/Images/ltv_heatmp.png)
+
+<b> LTV Insight:</b> The June 2017 cohort had the longest duration of LTV (up to age 11), thus, contributed the longest time. However, the September 2017 cohort had the highest LTV for it's entire duration. May and June 2018 had the lowest. More demographic is needed to see what either spurred and dampened user purchases.
 
 
 
+# Marketing
+Now to bring the cost table into play. 
+
+![cost_tbl](https://github.com/julyndav/Python/blob/main/Business%20Analytics/Images/cost%20table.png)
+
+### Marketing Objective:
+1) How much money was spent? Overall, per source and over time.
+2) How much did customer acquisition from each of the sources cost?
+3) How worthwhile where the investments? (ROI)
+
+
+#### Marketing Costs Overall:
+<ul>
+<li>Now to use the 'cost' table for this analysis.</li>
+<li>For overall marketing costs, sum the 'costs' column.</li>
+
+   #### Total Overall Marketing Costs: $ 329,131.62
+</ul>
+<p></p>
+
+#### Marketing Cost over time:
+<ul>
+   <li>I chose to show how much was spent on Marketing monthly.</li>
+   <li>Using the dt (date) column in the cost table, the data was grouped by month.</li>
+   <li>From their the variables were used to create a graph to represent the months on the x-axis and costs along the y-axis.</li>
+</ul>
+
+![AdvsTime](https://github.com/julyndav/Python/blob/main/Business%20Analytics/Images/ad%20cost%20month.png)
+<b> Insight:</b> The monthly marketing expense shows a natural progression for the time period. 6 of the months the marketing expense is below $25k. November and December has the highest marketing expense which could be due to the holiday season. All businesses are trying to cash in on holiday shopping dollars so it makes sense that more of an effort is put forth during that time.
+<br></br>
+
+
+#### Marketing Cost per Source:
+Even though this portion is focused on how much was spent per Ad source, I also wanted to show how much revenue was generated per ad source as well. 
+Back to the concept of grouping by the variable we want to showcase then summing the requested values. Unfortunately no information was provided as to what the ad sources are.
+
+![Source adcosts](https://github.com/julyndav/Python/blob/main/Business%20Analytics/Images/ad%20cost%20source.png)
+
+![soure_rev](https://github.com/julyndav/Python/blob/main/Business%20Analytics/Images/source%20cost%20vs%20rev.png)
+
+<b>Insights:</b> Source three has the highest marketing expense. If we compare the source with the highest expense and those with the highest Revenue; Source 3 is lacking on it's return. The highest Revenue sources also have marketing expenses, on average of less than $6k on average per month.
+
+<b>Recommendation:</b> Marketing department should re-evaluate the benefit of using Source 3 as an advertising source. Source 7 had virtually no activity at all so it didn't register and should be dropped along with Sources 10 and 9 due to low performance.
+<br></br>
+
+#### Customer Acquisition Costs (CAC) per Source:
+<ul>
+<li>Find the day and month of the first purchase of each customer</li>
+<li>Sort visits by first date and group by first uid.</li>
+<li>Merge with first orders</li>
+<li>Group table by source_id and first day, count uid</li>
+<li>Add costs using left_on=['source_id', 'first_order_dt'], right_on=['source_id', 'dt']</li>
+<li>Calculate CAC, create pivot table and plot a graph.</li>
+
+![CAC_source](https://github.com/julyndav/Python/blob/main/Business%20Analytics/Images/CAC%20by%20source.jpg)
+
+<b>Insight:</b> The source with the highest cost is 3 at 141K; interestinly, source 3 ranks 5 amongst the platforms in terms of Revenue. Source 7 didn't even register due to it's low value. Sources 1, 2 and 5 are the top performing sources and should be focued on. The average cost for marketing for each of the top sources is 38K with Source 5 having the highest individual ad cost of 52K.
+
+Recommendations: Under-performing should be given thought of termination or replacement
+<br></br>
+
+
+  
+# Conclusion
+The project analysis was to evaluate the marketing effectivness of Yandex Afisha. Several studies and forms of analysis were done to determine how people use the product, when they start buying, how much money each customer brings, costs and revenue. In the First and Second Stages, data was loaded and prepared to work with. All datasets contain no missing values or duplicates.
+
+The Data Preprocessing perform datatype adjustments, formatting, adding modified datasets, and truncating datetime to the primary dataset for analysis convenience. In the Third Stage conducted cohort analysis which was divided into three sections; User Engagement, Sales KPI, and Marketing.
+
+#### Sales by devices: 
+It was found that Desktop brought in over 710k users with a revenue of 6.45 million dollars while the touch device only brought in a little under 49K users and a net revenu of .5million dollars. More information is needed from marketing as to what the 'touch' devices are.
+The sources with the greatest revenue were sources:
+<ul>
+<li>2 - 2.6 mil</li>
+<li>1 - 2.3 mil</li>
+<li>5 - 1.2 mil</li>
+</ul>
+<p></p>
+
+#### Conversion:
+By evaluating the difference in days from visit to purchase, we learned that the majority of visitors made purchases on their first visit. Almost 33K visitors made purchases on their first visit.
+
+#### User Sessions: 
+There are an unusally high amount of 0's for the 'Lenght of User Session' KPI. This may be due to visitors that went to the site in error. More info is needed to see if the visitors with 0 session lenght are from internet traffic that was redirected to the site from clicking on external links. For a user to have spent no time on the site but visited, relays that they visited in error or it was not their intended site.
+
+*On order for a given time period, cohort analysis was done to include pivot table and heatmap. It isn't utnil age 5 that the number of orders starts to increase but that is mostly relegated to June 2017. August and September 2017 saw almost 1 1/2 orders per cohort age.
+
+#### Average purchase size:
+The month of December had more purchases than any other month for for the time frame given. The holiday season could have played a hand in this with gift purchases or sales. Again, June did not have enough time span so they are the lowest on all KPI metrics
+
+Marketing Overall, total ad expenses were 329K. Over 141k of that was used on Source 3, the lowest performing source. The others sources had less than 50K in marketing costs with SOurces 9 and 10 at less than 6k. An interesting insight is that as the months progressed there was a peak around the holiday season then a slow delcline. It's understandable as everyone is hoping to cash in on the holiday seasons.
+
+The average CAC is 9.15. A CAC of less than $10 per user seems feasible. Source 3 should be dropped as the ad expense is nearly halve of the revenue; giving it a lackluster ROI. Sources 7, 9 and 10 should be considered for dropping also since each had less than 40k in revenue for the combined 2017/2018'.
+
+Seeing how things performed from a monthly standpoint gave good overall view of the various metrics. Seeing the monthly revenue and ltv gave good insights into consumer spending. It would have been nice to see some user demographics; it may be able to pinpoint some customer trends.
+
+But form the monthly data, espeically the monthly LTV heatmap and with how technology is changing entertainment. From the 2017 data, June through September, the high numbers can be contributed to summer break for schools and colleges. Coupled with the heat of summer, going to the cinemas is major summer activity..
+
+Another aspect that was noticed based on the revenue cycles is that towards the middle part of 2018, there is a steady decline. With more households switching to online streaming services, the desire to go to theaters is decreasing. That trend and how it effects online ticket purchases will need further study.
+
+### Recommendations:
+
+Information/Research is need to see if current or past customers are on some type of email list; are customers made aware of promotions or discounts. Since sources 1, 2 and 5 are so popular, maybe integrating a quick customer satifaction survey that has a product discount will give some customer insights.
+What are customers purchasing? Are movies more popular than concerts on the Afisha platform. More information is needed on this from the Marketing department.
+Source 4, even though it was not a high revenue maker, did moderately well vs it's marketing budget of 61k at almost 500k in revenue. More thought should be given on promoting this source more.
+<p></p>
+
+### Overall Impression(s):
+Users get to the website and atleast make one purchase pretty much immediately. The ads are bringing in relevant users that want the product, but most users do not make multiple orders/visits and orders are small. Usally movie goers stay up to date on the latest and upcoming movies; it makes sense that their purchases would continue. Are customers not happy after their intial purchase?
