@@ -145,6 +145,20 @@ To see the actual user average per day, the 'groupby' function will be used.
 <li>The data had starting daily user total of around 600 users by the end of the study, daily user count was almost 2000 users.</li>
 <LI>From March 26,2018 to March 31,2018 showed a dramatic drop in daily usage of 1670 users. More reasearch needed on this to see why.</LI>
 </OL>
+<p></p>
+
+
+### Weekly and Monthly Users Visualizations:
+![WAUMAU](https://github.com/julyndav/Python/blob/main/Business%20Analytics/Images/WAU_MAU.png)
+<p></p>
+
+<b>Insights: </b> 
+<OL>
+<li>The gap/color change is for the change from 2017 to 2018.</li>
+<li>Weekly user average was: 5724 and Monthly average users were: 23228 .</li>
+<li>Weekly peak users topped out at 10.7K users.</li>
+<li>Monthly user peak total was 32.7K users.</li>
+</OL>
 <br></br>
 
 ### 2) Sessions per day?:
