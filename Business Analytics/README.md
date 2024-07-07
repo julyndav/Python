@@ -277,15 +277,14 @@ These are the steps taken to determine the difference betweeen when customers vi
 
 ![Histogram_daysdiff](https://github.com/julyndav/Python/blob/main/Business%20Analytics/Images/elasped_visit_toPurchase.png)
 <p></p>
+
+<b>Insights:</b> 
+<OL>
+<li>Majority of users made a purchase on their first visit. This is show by the spike at 0 days.</li>
+<li>This results in a 16% conversion rate.</li>
+<li>After their initial visit, customers are not returning. More research needed on this to determine a reason.</li>
+</OL>
 <br></br>
-
-
-
-
-
-
-
-
 
 ### 4) LTV (Life Time Value)
 <ul>
@@ -302,7 +301,7 @@ These are the steps taken to determine the difference betweeen when customers vi
    ![LTV](https://github.com/julyndav/Python/blob/main/Business%20Analytics/Images/ltv_heatmp.png)
 
 <b> LTV Insight:</b> The June 2017 cohort had the longest duration of LTV (up to age 11), thus, contributed the longest time. However, the September 2017 cohort had the highest LTV for it's entire duration. May and June 2018 had the lowest. More demographic is needed to see what either spurred and dampened user purchases.
-
+<br></br>
 
 
 # Marketing
