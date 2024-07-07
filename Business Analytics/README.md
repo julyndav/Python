@@ -257,6 +257,36 @@ If one wanted to, you could graph this to show the average purchase size for eac
 #### Average Purchase Size =  5.0
 <br></br>
 
+### When do people buy?:
+These are the steps taken to determine the difference betweeen when customers visit vs when they make their first purchase.
+<ul>
+   <li>Find the date of the first order for each user. Using the 'overview table'(contains our combined data).</li>
+</ul>
+
+![V_vs_P code](https://github.com/julyndav/Python/blob/main/Business%20Analytics/Images/visit_vs_purchase.png)
+<p></p>
+
+<OL>
+<li> Merged 'first order date' column to the combined table ('overview').</li>
+<li>Found first sessions per user. Created new table for this that contained only 'Uid' and 'first_session' columns</li>
+<li>Merged the 'first_order_date' table with the new 'first_session' table grouped by user ids. </li>   
+<li>Double checked date formats.</li>
+<LI>Determined number of days between 'first_session' and 'first_order_date'. 'diff_days' variable created and added to order/session date table.</LI>
+<li>Historgram created to get a visual on number of days between visiting and ordering.</li>
+</OL>
+
+![Histogram_daysdiff](https://github.com/julyndav/Python/blob/main/Business%20Analytics/Images/elasped_visit_toPurchase.png)
+<p></p>
+<br></br>
+
+
+
+
+
+
+
+
+
 ### 4) LTV (Life Time Value)
 <ul>
    <li>For each Uid(user id) we determine the first month an order was placed.</li>
