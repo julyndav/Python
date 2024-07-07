@@ -10,17 +10,17 @@ By doing so, we can identify key factors to help the marketing department from Y
 <br></br>
 
 ## Table of Contents:
-[Jupyter Notebook](https://github.com/julyndav/Business_Analytics/blob/main/BA_Yandex-Afisha.ipynb)<br>
-[Data Visualizations](https://github.com/julyndav/Business_Analytics/tree/main/cohort_images)
+
+[Jupyter Notebook](https://github.com/julyndav/Python/blob/main/Business%20Analytics/BA_Yandex_Afisha_JupNtbk_07072024.ipynb)
 <br></br>
 
 
 ### Skills Demostrated:
 <ul>
+<li>Extract and Loading Data</li>   
 <li>Python (for data cleaning, data manipulation and exploratory analysis)</li>
 <li>Panda Libraries (for data visualizations)</li>
 <li>Business Analytics(CAC, Cohort Analysis, ROI)</li>
-<li>Extract and Loading Data</li>
 </ul>
 <br></br>
 
