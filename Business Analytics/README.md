@@ -286,6 +286,33 @@ These are the steps taken to determine the difference betweeen when customers vi
 </OL>
 <br></br>
 
+### Orders Made Over Time?:
+<i>This section of the analysis will use the orders df as the base for it's data. Working with first purchase date as the cohort.</i>
+<p></p>
+
+#### Analysis Steps:
+<ul>
+   <li>Used 'orders' table to find orders by users.</li>
+   <li>Created 'order_month' column but extracting month for purchase('Buy Ts') date.</li>
+   <li>Retrived month of customer's frist order.</li>
+   <li>#merge the order and first order data frames based on 'user id.'</li>
+   <li>Calculated the number of buyers (n_buyers) for each month grouped by 'first_order_month'.</li>
+   <li>Calculated the number of orders.</li>
+   <li>Combined buyer and order totals. This is start of cohort.</li>
+   <li>Now to find the cohort ages and number of buyers per cohort.</li>
+</ul>
+
+![buyer_cohort](https://github.com/julyndav/Python/blob/main/Business%20Analytics/Images/buyers_per_cohort.png)
+
+
+
+
+
+
+
+
+
+
 ### 4) LTV (Life Time Value)
 <ul>
    <li>For each Uid(user id) we determine the first month an order was placed.</li>
@@ -301,6 +328,7 @@ These are the steps taken to determine the difference betweeen when customers vi
    ![LTV](https://github.com/julyndav/Python/blob/main/Business%20Analytics/Images/ltv_heatmp.png)
 
 <b> LTV Insight:</b> The June 2017 cohort had the longest duration of LTV (up to age 11), thus, contributed the longest time. However, the September 2017 cohort had the highest LTV for it's entire duration. May and June 2018 had the lowest. More demographic is needed to see what either spurred and dampened user purchases.
+<p></p>
 <br></br>
 
 
