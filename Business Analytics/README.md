@@ -180,7 +180,7 @@ Will need more research on whether people completely lose interest in what they 
 
 ![Session_length](https://github.com/julyndav/Python/blob/main/Business%20Analytics/Images/length%20of%20sess.png)
 
-<i> From unusally large spike of 0's, it seems to correlate with visitors that have 0 conversion days.</i>
+<i> From unusally large spike of 0's, it seems to correlate with visitors that have 0 conversion days. Customers wasted no time in making a purchase.</i>
 <br></br>
 
 ### 4) User Retention
