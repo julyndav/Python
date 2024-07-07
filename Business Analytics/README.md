@@ -19,7 +19,7 @@ By doing so, we can identify key factors to help the marketing department from Y
 <ul>
 <li>Python (for data cleaning, data manipulation and exploratory analysis)</li>
 <li>Panda Libraries (for data visualizations)</li>
-<li>Dashboard Design (PowerBI and Powerpoint)</li>
+<li>Business Analytics(CAC, Cohort Analysis, ROI)</li>
 <li>Extract and Loading Data</li>
 </ul>
 <br></br>
@@ -72,9 +72,9 @@ By doing so, we can identify key factors to help the marketing department from Y
 | 3 | Upload and analyize data |
 | 4 | Data cleaning and preparation |
 | 5 | Customer segmentation and analysis |
-| 6 | Determining Customer Retention Rate |
-| 7 | Sales Analysis (conversion rate, purchase size, LTV |
-| 8 | Marketing Analysis (marketing costs, CAC, ROMI) |
+| 6 | Product Analysis (user behaviors and retention rate) |
+| 7 | Sales Analysis (conversion rate, purchase size, LTV)|
+| 8 | Marketing Analysis (Marketing costs, CAC, ROMI) |
 | 9 | Conclusion and Reccomendations |
 
 <br></br>
