@@ -217,7 +217,7 @@ The average retention rate from all cohorts decreased slowly over time. One of t
 ### Reccomendation:
 May 2018 had no registerable data. The data for May 2018 needs more attention to see what is going on and why the data collection period wasn't for the entire month.
 
-### Product Analysis Conclusion:
+## Product Analysis Conclusion:
 Yandex.Afisha sees an average of 900 users daily with each users having around 1 session. The time spent on the site for that session is about 10 minutes. There was a significant spike in users around November 24th/Thanksgiving times which could be attributed to the holiday season. The 24th/25th of November is also one of the biggest shopping days of the year as a precursor to Christmas. Tickets may have been purchased as gifts but more user information would be need to to determine that. The spike in Users also coincides with an increase is session lenght to almost 18 minutes. The site my have slowed due to server traffice.
 One area of concern is the plunge in both users and session lenght that occured around March 31st. With such a sharp decrease in both users and session length; a few things may have occured. It could be a site crash, site maintenance or voluntary/involuntary site take down but again, more information would be need to make a solid conclusion.
 
@@ -232,11 +232,10 @@ In this section of the analysis, the 'visits' table that was customized for coho
 4) How much money do they bring? (LTV)
 
 ### 1) Preferred way to purchase?:
-Once the tables were merged, the 'groupby' function was used on the 'Device' variable, the the 'revenue' was summed. The total revenue value was formatted to show
+Once the tables were merged, the 'groupby' function was used on the 'Device' variable, the 'revenue' was summed. The total revenue value was formatted to show
 millions.  To find the number of users per each device, the same method was used to determine the total users. 
 
 ![Dev_users](https://github.com/julyndav/Python/blob/main/Business%20Analytics/Images/purchase%20how.png)
-<p></p>
 <br></br>
 
 ### 2) Orders vs Time period:
@@ -248,7 +247,7 @@ Again the 'grouby' function is empolyed to group the revenue data by weekly then
 To see how many orders customers are making over time, cohort analysis will be used once again along with the heatmap visualization. 
 This involved creating a new table. After the required tables were merged, the resultant table was over 50K rows. For the orders cohort, number of buyers was calculated for each month, variables were grouped, cohort age was found and number of buyers for each cohort age was calculated. Once that was determined then a pivot table was created for the heatmap visualization. 
 
-<b>Insight: </b> There are generally only one order per cohort age. It isn't utnil age 5 that the number of orders starts to increase but that is mostly relegated to June 2017. August and September 2017 saw almost 1 1/2 orders per cohort age.
+<b>Insight: </b> There are generally only one order per cohort age. It isn't until age 5 that the number of orders starts to increase but that is mostly relegated to June 2017. August and September 2017 saw almost 1 1/2 orders per cohort age.
 <br></br>
 
 ### 3) Average Purchase Size:
@@ -269,6 +268,7 @@ If one wanted to, you could graph this to show the average purchase size for eac
        report1['ltv'] = report1['Revenue'] / report1['n_buyers']</li>
    <li>Pivot table was then generated to graph the LTV heatmap from.</li>  
 </ul>
+
    ![LTV](https://github.com/julyndav/Python/blob/main/Business%20Analytics/Images/ltv_heatmp.png)
 
 <b> LTV Insight:</b> The June 2017 cohort had the longest duration of LTV (up to age 11), thus, contributed the longest time. However, the September 2017 cohort had the highest LTV for it's entire duration. May and June 2018 had the lowest. More demographic is needed to see what either spurred and dampened user purchases.
