@@ -30,7 +30,7 @@ By doing so, we can identify key factors to help the marketing department from Y
 | Numpy | Used for numerical operations on large quantities of data |
 | Seaborn | Python visualization library based on matplotlib |
 | Matplotlib | Python visualization library |
-<br>
+<br></br>
 
 ## Description of the data
 <p></p>
@@ -81,8 +81,6 @@ By doing so, we can identify key factors to help the marketing department from Y
 # Analysis Overview:
 
 ## Data Cleaning and Preparation:
-
-![Data_cleaning](https://github.com/julyndav/Python/blob/main/Business%20Analytics/Images/data%20cleaning1.png)
 <OL>
 <li>Extract datasets from project site.</li>
 <li>Import/Install required libraries.</li>
@@ -94,6 +92,8 @@ By doing so, we can identify key factors to help the marketing department from Y
 <LI>Tables checked for duplicates
 </OL>
 <p></p>
+
+![Data_cleaning](https://github.com/julyndav/Python/blob/main/Business%20Analytics/Images/data%20cleaning1.png)
 
 Now that the data has been cleaned, data types are set and it was determined that there are no duplicates, analysis can start. 
 <br></br>
@@ -134,9 +134,17 @@ To see the actual user average per day, the 'groupby' function will be used.
 
 ![DAU_graph](https://github.com/julyndav/Python/blob/main/Business%20Analytics/Images/Daily%20Average%20Users.png)
 
-The same code can be used to see the Average users per month and for the year with just a simple adjustment to the code.
-Second portion of code creates a visualization of the "DAU'. Viewing the Jupyter Notebook will allow you to see the process for weekly and monthly
-average users. 
+<b>Insights: </b> 
+<OL>
+<li>Same coding concept will be used for WAU and MAU visualizations.</li>
+<li>November had a peek of approxamitly 3300 daily users.</li>
+<UL>
+<li>The main spike in DAU happened on November 24th. A possible explanation for this could be due to pre-christmas sale?</li>
+<li>Another area to look into is the dip in the 2018 data for March 31st; what outside factors could have contributed to the dip?</li>   
+</UL>   
+<li>The data had starting daily user total of around 600 users by the end of the study, daily user count was almost 2000 users.</li>
+<LI>From March 26,2018 to March 31,2018 showed a dramatic drop in daily usage of 1670 users. More reasearch needed on this to see why.</LI>
+</OL>
 <br></br>
 
 ### 2) Sessions per day?:
