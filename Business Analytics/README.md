@@ -164,9 +164,14 @@ To see the actual user average per day, the 'groupby' function will be used.
 ### 2) Sessions per day?:
 ![Session_day](https://github.com/julyndav/Python/blob/main/Business%20Analytics/Images/sess%20per%20user.png)
 
-<b>Insights: </b> Number of sessions and users are fairly close in size with number of sessions being slightly higher. This denotes that some users had more than one session. Numbers over 1.05 show that a few users have had more than one session. The brief overview of the number of daily sessions shows that 2018 was more established with almost double the user count. 2017 low numbers can be contributed to start up marketing efforts and the platform being new. Would like to know when the platform came online for a broader trend analysis.
-
+<b>Insights:</b> 
+<OL>
+<li>Number of sessions and users are fairly close in size with number of sessions being slightly higher.</li>
+<li>Numbers over 1.05 show that a few users have had more than one session.</li>
+<li>Average session per user: 1.08.</li>
+</OL>
 <br></br>
+
 ### 3) Length of Session:
 Session length was determined by using Python to calculat that time between 'Start Ts' and 'End Ts'. Duration time was returned in seconds.
 <p></p>
