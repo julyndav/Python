@@ -273,17 +273,19 @@ These are the steps taken to determine the difference betweeen when customers vi
 <li>Double checked date formats.</li>
 <LI>Determined number of days between 'first_session' and 'first_order_date'. 'diff_days' variable created and added to order/session date table.</LI>
 <li>Historgram created to get a visual on number of days between visiting and ordering.</li>
-</OL>
+
 
 ![Histogram_daysdiff](https://github.com/julyndav/Python/blob/main/Business%20Analytics/Images/elasped_visit_toPurchase.png)
 <p></p>
 
-<b>Insights:</b> 
-<OL>
-<li>Majority of users made a purchase on their first visit. This is show by the spike at 0 days.</li>
-<li>This results in a 16% conversion rate.</li>
-<li>After their initial visit, customers are not returning. More research needed on this to determine a reason.</li>
+<li>Now to create a pivot table from the above data which will be represented by a heat map.</li>
+
+![oversovertimeHM](https://github.com/julyndav/Python/blob/main/Business%20Analytics/Images/orders_vsTime_hm.png)
+<p></p>
 </OL>
+<p></p>
+<b>Insight:</b>There are generally only one order per cohort age. It isn't utnil age 4 that the number of orders starts to increase but that is relegated to June 2017. August and September 2017 saw approximately 1.5 orders per cohort at age 6 and on.
+
 <br></br>
 
 ### Orders Made Over Time?:
