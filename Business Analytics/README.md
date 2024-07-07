@@ -278,10 +278,7 @@ These are the steps taken to determine the difference betweeen when customers vi
 ![Histogram_daysdiff](https://github.com/julyndav/Python/blob/main/Business%20Analytics/Images/elasped_visit_toPurchase.png)
 <p></p>
 
-<li>Now to create a pivot table from the above data which will be represented by a heat map.</li>
 
-![oversovertimeHM](https://github.com/julyndav/Python/blob/main/Business%20Analytics/Images/orders_vsTime_hm.png)
-<p></p>
 </OL>
 <p></p>
 <b>Insight:</b>There are generally only one order per cohort age. It isn't utnil age 4 that the number of orders starts to increase but that is relegated to June 2017. August and September 2017 saw approximately 1.5 orders per cohort at age 6 and on.
@@ -306,7 +303,10 @@ These are the steps taken to determine the difference betweeen when customers vi
 
 ![buyer_cohort](https://github.com/julyndav/Python/blob/main/Business%20Analytics/Images/buyers_per_cohort.png)
 
+<li>Now to create a pivot table from the above data which will be represented by a heat map.</li>
 
+![oversovertimeHM](https://github.com/julyndav/Python/blob/main/Business%20Analytics/Images/orders_vsTime_hm.png)
+<p></p>
 
 
 
