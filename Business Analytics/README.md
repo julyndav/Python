@@ -14,7 +14,6 @@ By doing so, we can identify key factors to help the marketing department from Y
 [Jupyter Notebook](https://github.com/julyndav/Python/blob/main/Business%20Analytics/BA_Yandex_Afisha_JupNtbk_07072024.ipynb)
 <br></br>
 
-
 ### Skills Demostrated:
 <ul>
 <li>Extract and Loading Data</li>   
@@ -84,10 +83,17 @@ By doing so, we can identify key factors to help the marketing department from Y
 ## Data Cleaning and Preparation:
 
 ![Data_cleaning](https://github.com/julyndav/Python/blob/main/Business%20Analytics/Images/data%20cleaning1.png)
-
+<OL>
+<li>Extract datasets from project site.</li>
+<li>Import/Install required libraries.</li>
+<li>Load datasets into Jupyter Notebook for analysis.</li>
+<UL>
+<li>Data was previously viewed via excel. When loading into Jupyter, data was parsed and data types set.</li>
+<li>Tables were checked using '.info' function to see if optimized.</li>   
+</UL>
+<LI>Tables checked for duplicates
+</OL>
 <p></p>
-
-![Data_cleaning2](https://github.com/julyndav/Python/blob/main/Business%20Analytics/Images/dc2.png)
 
 Now that the data has been cleaned, data types are set and it was determined that there are no duplicates, analysis can start. 
 <br></br>
@@ -305,7 +311,7 @@ Recommendations: Under-performing should be given thought of termination or repl
 
 
   
-# Conclusion
+# Analysis Conclusion
 The project analysis was to evaluate the marketing effectivness of Yandex Afisha. Several studies and forms of analysis were done to determine how people use the product, when they start buying, how much money each customer brings, costs and revenue. In the First and Second Stages, data was loaded and prepared to work with. All datasets contain no missing values or duplicates.
 
 The Data Preprocessing perform datatype adjustments, formatting, adding modified datasets, and truncating datetime to the primary dataset for analysis convenience. In the Third Stage conducted cohort analysis which was divided into three sections; User Engagement, Sales KPI, and Marketing.
@@ -314,9 +320,9 @@ The Data Preprocessing perform datatype adjustments, formatting, adding modified
 It was found that Desktop brought in over 710k users with a revenue of 6.45 million dollars while the touch device only brought in a little under 49K users and a net revenu of .5million dollars. More information is needed from marketing as to what the 'touch' devices are.
 The sources with the greatest revenue were sources:
 <ul>
-<li>2 - 2.6 mil</li>
-<li>1 - 2.3 mil</li>
-<li>5 - 1.2 mil</li>
+<li>Source 2 - $2.6 million</li>
+<li>Source 1 - $2.3 million</li>
+<li>Source 5 - $1.2 million</li>
 </ul>
 <p></p>
 
