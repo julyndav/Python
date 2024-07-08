@@ -387,7 +387,7 @@ Back to the concept of grouping by the variable we want to showcase then summing
 
 <ul>
    <li>Results visualized as a single line chart</li>
-   <li>The average CAC per buyer is: <b>$9.15.</b></li>
+   <li>The average CAC per buyer is: <b>$8.24.</b></li>
 </ul>
 <br></br>
 
