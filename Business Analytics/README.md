@@ -434,8 +434,24 @@ Recommendations: Under-performing sources should be given thought of termination
 <ul>
  <li>Determine LTV per source.</li>
  <li>Determine CAC per source.</li>  
- <li></li>
+ <li>Find number of buyers and costs per source. 'buyers' and 'cost' will be separate tables.</li>
+ <li>Merge 'buyers' and 'costs' tables together based on the source.</li>
+ <li>Calculate 'cac' for each source.</li>
+ <li>Merged previous 'ltv_per_source' with current table.</li>
+ <li>Now to calculate 'romi'</li>
 </ul>
+
+![romi](https://github.com/julyndav/Python/blob/main/Business%20Analytics/Images/romis.png)
+
+![romi_source](https://github.com/julyndav/Python/blob/main/Business%20Analytics/Images/romi_source.png)
+
+<b>Source Note:</b> Originally there were no Source 6 or 8 and Source 7 was so neglible that it's ROMI was 0. This is why there is a gap from Source 5-9.
+
+<b>Insights:</b> There is no ROI/ROMI for Source 7 as it value was practically negligible, it didn't register enough for a cost value even with 1 users. That one user only generated 1.22 in revenue for Source 7 so curious to what item was purchased by the user. As other analysis has shown. Other than the top source, Source 1, the others maintained a fairly average ROI/ROMI regardless of marketing costs
+
+<b>Recommendation:</b> It's advisable to reallocate the marketing budget to the source that costs lower but could yield higher ROMI in a shorter period. Source 3 is not a profitable source(along with Source 7) and although Sources 9 and 10 have a low marketing cost they also have low revenue of less than 6K.
+
+
 
 # Analysis Conclusion
 The project analysis was to evaluate the marketing effectivness of Yandex Afisha. Several studies and forms of analysis were done to determine how people use the product, when they start buying, how much money each customer brings, costs and revenue. In the First and Second Stages, data was loaded and prepared to work with. All datasets contain no missing values or duplicates.
