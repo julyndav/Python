@@ -418,7 +418,8 @@ Recommendations: Under-performing sources should be given thought of termination
 ![roi](https://github.com/julyndav/Python/blob/main/Business%20Analytics/Images/ROI.png)
 <p></p>
 <li>Once ROI has been determined, a pivot table can be created. From that pivot table, we'll have a heatmap giving a visual for ROI.</li>
-
+</ul>
+<p></p>
    ![ROI](https://github.com/julyndav/Python/blob/main/Business%20Analytics/Images/ROI%20by%20cohort.png)
 <br></br>
 
