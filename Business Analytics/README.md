@@ -381,6 +381,7 @@ Back to the concept of grouping by the variable we want to showcase then summing
    <li>To repeat the above actions but for total buyers for 'first_order_month. This will be it's own table.</li>
    <li>Now to combine the two tables on the 'first_order_month'.</li>
 <p></p>
+   
    ![cac_buyer](https://github.com/julyndav/Python/blob/main/Business%20Analytics/Images/CAC_buyer.png)
 <p></p>
    <li>Results visualized as a single line chart</li>
@@ -399,7 +400,7 @@ Back to the concept of grouping by the variable we want to showcase then summing
 <li>Add costs using left_on=['source_id', 'first_order_dt'], right_on=['source_id', 'dt']</li>
 <li>Calculate CAC, create pivot table and plot a graph.</li>
 
-![CAC_source](https://github.com/julyndav/Python/blob/main/Business%20Analytics/Images/CAC%20by%20source.jpg)
+![CAC_source](https://github.com/julyndav/Python/blob/main/Business%20Analytics/Images/CAC%20by%20source.png)
 
 <b>Insight:</b> The source with the highest cost is 3 at 141K; interestinly, source 3 ranks 5 amongst the platforms in terms of Revenue. Source 7 didn't even register due to it's low value. Sources 1, 2 and 5 are the top performing sources and should be focued on. The average cost for marketing for each of the top sources is 38K with Source 5 having the highest individual ad cost of 52K.
 
