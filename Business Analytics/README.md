@@ -387,7 +387,6 @@ Back to the concept of grouping by the variable we want to showcase then summing
    <li>Results visualized as a single line chart</li>
    <li>The average CAC per buyer is: <b> $9.15.</b></li>
 </ul>
-<p></p>
 <br></br>
 
 
@@ -402,13 +401,29 @@ Back to the concept of grouping by the variable we want to showcase then summing
 
 ![CAC_source](https://github.com/julyndav/Python/blob/main/Business%20Analytics/Images/CAC%20by%20source.png)
 
-<b>Insight:</b> The source with the highest cost is 3 at 141K; interestinly, source 3 ranks 5 amongst the platforms in terms of Revenue. Source 7 didn't even register due to it's low value. Sources 1, 2 and 5 are the top performing sources and should be focued on. The average cost for marketing for each of the top sources is 38K with Source 5 having the highest individual ad cost of 52K.
+<b>Insight:</b> 
+The marketing source with the highest customer acquisition cost is source 3 at 141K; almost half of source 3's revenue was marking costs. Source 3 ranks 5th amongst the platforms in terms of Revenue. Source 7 didn't even register due to it's low value. Sources 1, 2 and 5 are the top performing sources in termn of revenue generated and should be focused on. The average cost for marketing for each of the top sources is $38K with Source 5 having the highest individual ad cost of 52K. There was no source 6 or 8.
 
-Recommendations: Under-performing should be given thought of termination or replacement
+Recommendations: Under-performing sources should be given thought of termination or replacement
+<br></br>
+
+## How worthwhile where the investments? (ROI)
+
+### ROI:
+<ul>
+<li>In genereal, ROI=LTV/CAC. We already have calculations on CAC per month and we have info on ltv in ltv_cohort. So let's merge.</li> 
+<li>The previous table for LTV already has cohort ages.</li>
+<li>Now to calculate for ROI. This variable will be added to table as new column./li> 
+<p></p>
+![roi](https://github.com/julyndav/Python/blob/main/Business%20Analytics/Images/ROI.png)
+<p></p>
+<li>Once ROI has been determined, a pivot table can be created. From that pivot table, we'll have a heatmap giving a visual for ROI.</li>
+
+   ![ROI](https://github.com/julyndav/Python/blob/main/Business%20Analytics/Images/ROI%20by%20cohort.png)
 <br></br>
 
 
-  
+
 # Analysis Conclusion
 The project analysis was to evaluate the marketing effectivness of Yandex Afisha. Several studies and forms of analysis were done to determine how people use the product, when they start buying, how much money each customer brings, costs and revenue. In the First and Second Stages, data was loaded and prepared to work with. All datasets contain no missing values or duplicates.
 
