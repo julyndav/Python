@@ -356,8 +356,10 @@ Now to bring the cost table into play.
    <li>Using the dt (date) column in the cost table, the data was grouped by month.</li>
    <li>From their the variables were used to create a graph to represent the months on the x-axis and costs along the y-axis.</li>
 </ul>
+<br></br>
 
 ![AdvsTime](https://github.com/julyndav/Python/blob/main/Business%20Analytics/Images/ad%20cost%20month.png)
+
 <b> Insight:</b> The monthly marketing expense shows a natural progression for the time period. 6 of the months the marketing expense is below $25k. November and December has the highest marketing expense which could be due to the holiday season. All businesses are trying to cash in on holiday shopping dollars so it makes sense that more of an effort is put forth during that time.
 <br></br>
 
@@ -440,8 +442,11 @@ Recommendations: Under-performing sources should be given thought of termination
  <li>Merged previous 'ltv_per_source' with current table.</li>
  <li>Now to calculate 'romi'</li>
 </ul>
+<p></p>
 
 ![romi](https://github.com/julyndav/Python/blob/main/Business%20Analytics/Images/romis.png)
+
+#### ROMI stands for Return on Marketing Investment. This metric shows how cost-effective your marketing investments are
 
 ![romi_source](https://github.com/julyndav/Python/blob/main/Business%20Analytics/Images/romi_source.png)
 
