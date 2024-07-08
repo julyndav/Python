@@ -375,6 +375,21 @@ Back to the concept of grouping by the variable we want to showcase then summing
 <b>Recommendation:</b> Marketing department should re-evaluate the benefit of using Source 3 as an advertising source. Source 7 had virtually no activity at all so it didn't register and should be dropped along with Sources 10 and 9 due to low performance.
 <br></br>
 
+### Customer Acquistion Costs (CAC) by Buyers:
+<ul>
+   <li>Using the 'costs' table, extract the 'first_order_month' and total cost for that date. This will be it's own table.</li>
+   <li>To repeat the above actions but for total buyers for 'first_order_month. This will be it's own table.</li>
+   <li>Now to combine the two tables on the 'first_order_month'.</li>
+<p></p>
+   ![cac_buyer](https://github.com/julyndav/Python/blob/main/Business%20Analytics/Images/CAC_buyer.png)
+<p></p>
+   <li>Results visualized as a single line chart</li>
+   <li>The average CAC per buyer is: <b> $9.15.</b></li>
+</ul>
+<p></p>
+<br></br>
+
+
 ### Customer Acquisition Costs (CAC) per Source:
 <ul>
 <li>Find the day and month of the first purchase of each customer</li>
