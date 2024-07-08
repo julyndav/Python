@@ -450,7 +450,8 @@ Recommendations: Under-performing sources should be given thought of termination
 <b>Insights:</b> There is no ROI/ROMI for Source 7 as it value was practically negligible, it didn't register enough for a cost value even with 1 users. That one user only generated 1.22 in revenue for Source 7 so curious to what item was purchased by the user. As other analysis has shown. Other than the top source, Source 1, the others maintained a fairly average ROI/ROMI regardless of marketing costs
 
 <b>Recommendation:</b> It's advisable to reallocate the marketing budget to the source that costs lower but could yield higher ROMI in a shorter period. Source 3 is not a profitable source(along with Source 7) and although Sources 9 and 10 have a low marketing cost they also have low revenue of less than 6K.
-
+<br></br>
+<br></br>
 
 
 # Analysis Conclusion
