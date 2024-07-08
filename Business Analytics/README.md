@@ -325,7 +325,7 @@ These are the steps taken to determine the difference betweeen when customers vi
 
    ![LTV](https://github.com/julyndav/Python/blob/main/Business%20Analytics/Images/ltv_heatmp.png)
 
-<b> LTV Insight:</b> The June 2017 cohort had the longest duration of LTV (up to age 11), thus, contributed the longest time. However, the September 2017 cohort had the highest LTV for it's entire duration. May and June 2018 had the lowest. More demographic is needed to see what either spurred and dampened user purchases.
+<b> LTV Insight:</b> The June 2017 cohort had the longest duration of LTV (up to age 11), thus, contributed the longest time. However, the September 2017 cohort had the highest LTV for it's entire duration. May and June 2018 had the lowest. More information is needed to see what spurred and dampened user purchases.
 <p></p>
 <br></br>
 
@@ -341,7 +341,7 @@ Now to bring the cost table into play.
 3) How worthwhile where the investments? (ROI)
 
 
-#### Marketing Costs Overall:
+### Marketing Costs Overall:
 <ul>
 <li>Now to use the 'cost' table for this analysis.</li>
 <li>For overall marketing costs, sum the 'costs' column.</li>
@@ -350,7 +350,7 @@ Now to bring the cost table into play.
 </ul>
 <p></p>
 
-#### Marketing Cost over time:
+### Marketing Cost over time:
 <ul>
    <li>I chose to show how much was spent on Marketing monthly.</li>
    <li>Using the dt (date) column in the cost table, the data was grouped by month.</li>
@@ -362,7 +362,7 @@ Now to bring the cost table into play.
 <br></br>
 
 
-#### Marketing Cost per Source:
+### Marketing Cost per Source:
 Even though this portion is focused on how much was spent per Ad source, I also wanted to show how much revenue was generated per ad source as well. 
 Back to the concept of grouping by the variable we want to showcase then summing the requested values. Unfortunately no information was provided as to what the ad sources are.
 
@@ -375,7 +375,7 @@ Back to the concept of grouping by the variable we want to showcase then summing
 <b>Recommendation:</b> Marketing department should re-evaluate the benefit of using Source 3 as an advertising source. Source 7 had virtually no activity at all so it didn't register and should be dropped along with Sources 10 and 9 due to low performance.
 <br></br>
 
-#### Customer Acquisition Costs (CAC) per Source:
+### Customer Acquisition Costs (CAC) per Source:
 <ul>
 <li>Find the day and month of the first purchase of each customer</li>
 <li>Sort visits by first date and group by first uid.</li>
