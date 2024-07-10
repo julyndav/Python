@@ -1,8 +1,4 @@
-![banner](https://github.com/julyndav/Python/blob/main/DOHMH%20Dog%20Bite%20Analysis/Images/PROJECT%20BANNER.png)
-
-
-
-
+![banner_image](https://github.com/julyndav/Python/blob/main/DOHMH%20Dog%20Bite%20Analysis/Images/PROJECT%20BANNER.png)
 
 
 # An Exploratory Dive into Dog Bite Frequency.
