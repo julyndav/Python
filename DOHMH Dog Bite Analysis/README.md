@@ -12,14 +12,14 @@ Extracted, processed, and analyzed 10K+ records spanning 2015 through 2021 from 
 
 
 ## Challenge Project Rundown:
-#### Objectives:
-As a BI Developer for National Rail, a company that provides business services to passenger trains operatored in England, Scotland, and Wales, 
-create an exploratory dashboard that will: 
+### Objectives:
+Perform an exploratory analysis of dog bite data using Python to find any general metrics and trends then to visualize with using plotting libraries: <br>
+#### Questions to ask:
 <ul>
-<li>Identify the most popular train routes</li>
-<li>Determine peak travel times</li>
-<li>Analyze revenue from different ticket types & ticket classes</li>
-<li>Diagnose on-time performance and contributing factors</li>
+<li>What breed of dog is more prone to bite?</li>
+<li>Which Boroughs have a high rate of incidences?</li>
+<li>What is the gender breakdown? Which one is likely to bite?</li>
+<li>Does Age play a factor?</li>
 </ul>
 <br>
 
