@@ -31,36 +31,30 @@ Perform an exploratory analysis of dog bite data using Python to find any genera
 
 ### Reviewing the Data:
 <ul>
-<li>Reviewed the provided data consisting of two CSV tables: one with working data and another with variable information.</li>
-<li>Loaded the working data into Power BI for initial data cleaning, formatting, and manipulation which was minimal.</li>
+<li>Analysis was done on the Kaggle platform.</li>
+<li>Reviewed the available data card that gave an overview of the dataset..</li>
 </ul>  
 <p>
   
 ### Processing Data:
 <ul>
-<li>Formatted currency and date columns.</li>
-<li>Reviewed each column’s variables, consolidating the 'Reason for Delay' column to unify various delay reasons.</li>
-<li>Ensured data consistency and accuracy through cleaning and validation processes.</li>
+<li>Additional Panda libraries were added for visualizations and custom color scheme.</li>
+<li>Data was cleaned which included; removing/manipulation 'null' values, handling duplicates and setting data types</li>
+<li>The 'Breed' column was more involved as the breeds had to be consolidated. Originally there were over 1000 breeds and it was pared down to 116. </li>
 </ul>
 <p></p>
   
-### Dashboard Concept:
-<ul>
-<li>Outlined key metrics and potential visuals, dividing the dashboard into four main sections based on the initial requirements.</li>
-<li>Designed the overall aesthetic and layout to ensure a user-friendly interface. The background and icons were designed and exported from PowerPoint.</li>
-</ul>
-<p></p>
-
 ### Skills Demostrated
 <ul>
-<li>Data extraction and loading</li>
-<li>Data cleaning (using Power Query)</li>
-<li>Calculated Columns</li>
-<li>Data Analysis Expression (DAX) Functions</li>
-<li>Dashboard design</li>
+<li>Python</li>
+<li>Data cleaning </li>
+<li>Creating Calculated Columns</li>
+<li>Exploratory Analysis</li>
 <li>Data Visualisation</li>
 </ul>
 <br></br>
+
+
 
 # Dashboard
 ## Overview Page:
