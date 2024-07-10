@@ -5,8 +5,9 @@ Extracted, processed, and analyzed 10K+ records spanning 2015 through 2021 from 
 <br></br>
 
 ## Table of Contents:
-[Interactive PowerBI Dashboard](https://mavenanalytics.io/project/15152)<br>
-[Data Source](https://mavenanalytics.io/challenges/maven-rail-challenge/08941141-d23f-4cc9-93a3-4c25ed06e1c3)
+[PowerBI Dashboard Overview](https://github.com/julyndav/PowerBI/tree/main/NYC_Dog_Bite_Analysis)<br>
+[Original Data Source - NYC Open Data](https://data.cityofnewyork.us/Health/DOHMH-Dog-Bite-Data/rsgh-akpg/about_data)<br>
+[Kaggle Link to Dataset](https://www.kaggle.com/datasets/muhmiqbal/dog-bites-nyc)
 <br></br>
 
 ## About this project:
