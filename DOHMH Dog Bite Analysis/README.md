@@ -10,10 +10,9 @@ Extracted, processed, and analyzed 10K+ records spanning 2015 through 2021 from 
 [Kaggle Link to Dataset](https://www.kaggle.com/datasets/muhmiqbal/dog-bites-nyc)
 <br></br>
 
-## About this project:
 
-### Challenge Project Rundown
-#### Objective:
+## Challenge Project Rundown:
+#### Objectives:
 As a BI Developer for National Rail, a company that provides business services to passenger trains operatored in England, Scotland, and Wales, 
 create an exploratory dashboard that will: 
 <ul>
