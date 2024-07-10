@@ -32,7 +32,7 @@ Perform an exploratory analysis of dog bite data using Python to find any genera
 ### Reviewing the Data:
 <ul>
 <li>Analysis was done on the Kaggle platform.</li>
-<li>Reviewed the available data card that gave an overview of the dataset..</li>
+<li>Reviewed the available data card that gave an overview of the dataset.</li>
 </ul>  
 <p>
   
@@ -40,7 +40,9 @@ Perform an exploratory analysis of dog bite data using Python to find any genera
 <ul>
 <li>Additional Panda libraries were added for visualizations and custom color scheme.</li>
 <li>Data was cleaned which included; removing/manipulation 'null' values, handling duplicates and setting data types</li>
-<li>The 'Breed' column was more involved as the breeds had to be consolidated. Originally there were over 1000 breeds and it was pared down to 116. </li>
+<li>'Spay/Neuter' column changed to 'Y' and 'N'. </li>
+<li>Year and Month were extracted from the'DateOfBite' column.</li>
+  
 </ul>
 <p></p>
   
@@ -56,8 +58,30 @@ Perform an exploratory analysis of dog bite data using Python to find any genera
 
 
 
-# Dashboard
-## Overview Page:
+# Analysis
+After the initial cleaning and data preparation, here are the results: 
+
+### Key points that the unique values are showing us? 
+<ul> <li> UniqueID - there are a total 10773 dogs in the study</li>
+    <li> DateOfBite - 2331 dates that bites took place.</li>
+    <li> Species - Only 1 species present in the data/study</li>
+    <li> Breed - We have 1010 breeds of dogs!</li>
+    <li> Gender - 3 types of genders are present.</li>
+    <li> Boroughs - 6 Boroughs or neighboohds. </li>
+    <li> BiteMonth - 12, giving data for a year.</li>  
+    <li> BiteYear - Study contains 7 years worth of data.</li>
+</ul
+<br></br>
+
+| Raw/Unprocessed Data     | Cleaned and Ready for Analysis      | 
+| ----------------------------------- | ----------------------------------- | 
+![raw](https://github.com/julyndav/Python/blob/main/DOHMH%20Dog%20Bite%20Analysis/Images/raw_data.png) | ![cleaned](https://github.com/julyndav/Python/blob/main/DOHMH%20Dog%20Bite%20Analysis/Images/cleaned_data.png) | 
+
+<br></br>
+
+## Breed Consolidation
+Paring down over 1k dog breeds was the most time consuming part of the analysis but essential to ensure uniformity and consistency. With over 1000 different dog breeds, many of which might be variations or mixed breeds, it would be challenging to draw meaningful insights. By consolidating similar breeds the dataset will be more manageable. 
+
 <ul>
 <li>Displays general ticket information: quantity, purchase methods, monthly ticket totals, and average price.</li>
 <li>Highlights the number of stations covered, with a focus on the top 3 departure and arrival stations, their on-time performance, and revenue.</li>
