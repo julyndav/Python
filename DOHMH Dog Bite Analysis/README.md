@@ -1,7 +1,14 @@
-# An Exploratory Dive into Dog Bite Frequency.
-Comprehensive data analysis of dog bite incidents using NYC Open Data and Kaggle datasets.
+![banner](https://github.com/julyndav/Python/blob/main/DOHMH%20Dog%20Bite%20Analysis/Images/PROJECT%20BANNER.png)
 
-Extracted, processed, and analyzed 10K+ records spanning 2015 through 2021 from the New York City's Department of Health and Mental Hygiene. Focused on exploring and manipulating the data to uncover key trends and insights. Provided brief, data-driven insights throughout the analysis, highlighting significant patterns and anomalies without developing a dashboard. The customized visualizations were designed to effectively communicate findings and support public health initiatives.h 2021 and consists of 10K+ records. The focus of this analysis to explore and manipulate the data and design customized visuals. 
+
+
+
+
+
+# An Exploratory Dive into Dog Bite Frequency.
+Comprehensive data analysis of dog bite incidents using NYC Open Data via Kaggle dataset and coding platform.
+
+Processe and analyze 10K+ records spanning 2015 through 2021 from the New York City's Department of Health and Mental Hygiene. Focused on exploring and manipulating the data to uncover key trends and insights. Provided brief, data-driven insights throughout the analysis, highlighting significant patterns and anomalies. The customized visualizations were designed to effectively communicate findings and support public health initiatives.
 <br></br>
 
 ## Table of Contents:
@@ -13,7 +20,7 @@ Extracted, processed, and analyzed 10K+ records spanning 2015 through 2021 from 
 
 ## Challenge Project Rundown:
 ### Objectives:
-Perform an exploratory analysis of dog bite data using Python to find any general metrics and trends then to visualize with using plotting libraries: <br>
+Perform an exploratory analysis of dog bite data using Python to find any general metrics and trends then to visualize with using plotting libraries. <br>
 #### Questions to ask:
 <ul>
 <li>What breed of dog is more prone to bite?</li>
