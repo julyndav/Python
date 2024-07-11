@@ -83,13 +83,13 @@ After the initial cleaning and data preparation, here are the results:
 Paring down over 1k dog breeds was the most time consuming part of the analysis but essential to ensure uniformity and consistency. With over 1000 different dog breeds, many of which might be variations or mixed breeds, it would be challenging to draw meaningful insights. By consolidating similar breeds the dataset will be more manageable. 
 
 <ul>
-<li>Displays general ticket information: quantity, purchase methods, monthly ticket totals, and average price.</li>
-<li>Highlights the number of stations covered, with a focus on the top 3 departure and arrival stations, their on-time performance, and revenue.</li>
-<li>KPIs and visuals to provide a summary of other key metrics.</li>
+<li>First to count the number of unique values in the 'Breed' column. The result was <b>1010 different breeds</b></li>
+<li>The unique breed values were listed then revised.</li>
+<li>Due to the size of the list, it was broken down into two sections.</li>
 </ul>
 <p></p>
 
-![MainDB](https://github.com/julyndav/PowerBI/blob/main/UK_National_Rail/Images/UKRail%20Img1.png)
+![breed_consol](https://github.com/julyndav/Python/blob/main/DOHMH%20Dog%20Bite%20Analysis/Images/breed_manip.png)
 
 ### Overview Insights: 
 <b>Online Sales:</b>
