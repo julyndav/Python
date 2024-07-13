@@ -2,13 +2,12 @@
 
 
 # An Exploratory Dive into Dog Bite Frequency.
-Comprehensive data analysis of dog bite incidents using NYC Open Data via Kaggle dataset and coding platform.
+Comprehensive exploratory analysis of dog bite incidents using NYC Open Data via Kaggle dataset and coding platform.
 
-Processe and analyze 10K+ records spanning 2015 through 2021 from the New York City's Department of Health and Mental Hygiene. Focused on exploring and manipulating the data to uncover key trends and insights. Provided brief, data-driven insights throughout the analysis, highlighting significant patterns and anomalies. The customized visualizations were designed to effectively communicate findings and support public health initiatives.
+Processe and analyze 20K+ records spanning 2015 through 2021 from the New York City's Department of Health and Mental Hygiene. Focused on exploring and manipulating the data to uncover key trends and insights. Provided brief, data-driven insights throughout the analysis, highlighting significant patterns and anomalies. The customized visualizations were designed to effectively communicate findings and support public health initiatives.
 <br></br>
 
 ## Table of Contents:
-[PowerBI Dashboard Overview](https://github.com/julyndav/PowerBI/tree/main/NYC_Dog_Bite_Analysis)<br>
 [Original Data Source - NYC Open Data](https://data.cityofnewyork.us/Health/DOHMH-Dog-Bite-Data/rsgh-akpg/about_data)<br>
 [Kaggle Link to Dataset](https://www.kaggle.com/datasets/muhmiqbal/dog-bites-nyc)
 <br></br>
@@ -31,7 +30,7 @@ Perform an exploratory analysis of dog bite data using Python to find any genera
 
 ### Reviewing the Data:
 <ul>
-<li>Analysis was done on the Kaggle platform.</li>
+<li>Analysis was done using Python via Jupyter Notebook platform.</li>
 <li>Reviewed the available data card that gave an overview of the dataset.</li>
 </ul>  
 <p>
