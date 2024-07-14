@@ -19,7 +19,7 @@ Processe and analyze 20K+ records spanning 2015 through 2021 from the New York C
 <li>Data cleaning </li>
 <li>Creating Calculated Columns</li>
 <li>Exploratory Analysis</li>
-<li>Data Visualisation</li>
+<li>Data Visualisation (Matplotlib, Seaborn)</li>
 </ul>
 <br></br>
 
