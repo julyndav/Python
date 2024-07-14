@@ -50,7 +50,7 @@ Perform an exploratory analysis of dog bite data using Python to find any genera
 <p></p>
 <br>
 
-# My Analysis Process:
+# Analysis Process:
 
 ### Reviewing the Data:
 <ul>
@@ -76,15 +76,31 @@ Perform an exploratory analysis of dog bite data using Python to find any genera
 
 ### Data Cleaning
 After running the '.info()' function, it gave a rundown of the dataset.<p>
-<ul> <li> Null Values - 3 columns contained null values: 'Breed', 'Age' and 'ZipCode' contained null values.</li>
-            1. 'Breed' null values - changed to 'Unknown'.<p>
-            2. 'Age' null values - changed to (0) and all values kept.<p>
-            3. 'ZipCode' null values - changed to (0) and all values kept.<p>
-    <li> Duplicates - Almost half of the 'UniqueID's were duplicated. .</li>
-    <li> Data Types - Data types set.</li>
-            1. Outliers removed from 'Age'.<p>
-            2. Date column formatted. Year and Month extracted from date into new columns.<p>
-</ul>
+<OL>
+<li> Null Values - 3 columns contained null values: 'Breed', 'Age' and 'ZipCode' contained null values.</li>
+<ul>
+  <li>'Breed' null values - changed to 'Unknown'.</li>
+  <li>'Age' null values - changed to (0) and all values kept.</li>
+  <li>'ZipCode' null values - changed to (0) and all values kept</li>
+</ul>  
+<li>Duplicates - Almost half of the 'UniqueID's were duplicated.</li>
+<li>Data Types - Data types set.</li>
+<UL>
+<li>Outliers removed from 'Age'.</li>
+<li> Date column formatted. Year and Month extracted from date into new columns.</li>   
+</UL>
+</OL>
+<p></p>
+
+| Raw/Unprocessed Data     | Cleaned and Ready for Analysis      | 
+| ----------------------------------- | ----------------------------------- | 
+![raw](https://github.com/julyndav/Python/blob/main/DOHMH%20Dog%20Bite%20Analysis/Images/raw_data.png) | ![cleaned](https://github.com/julyndav/Python/blob/main/DOHMH%20Dog%20Bite%20Analysis/Images/cleaned_data.png) | 
+
+<p></p>
+
+### Let's get a glimpse of column values.
+![Unique_Values](https://github.com/julyndav/Python/blob/main/DOHMH%20Dog%20Bite%20Analysis/Images/unique_data.png)<p>
+
 
 ### Key points that the unique values are showing us? 
 <ul> <li> UniqueID - there are a total 10773 dogs in the study</li>
@@ -98,11 +114,7 @@ After running the '.info()' function, it gave a rundown of the dataset.<p>
 </ul
 <br></br>
 
-| Raw/Unprocessed Data     | Cleaned and Ready for Analysis      | 
-| ----------------------------------- | ----------------------------------- | 
-![raw](https://github.com/julyndav/Python/blob/main/DOHMH%20Dog%20Bite%20Analysis/Images/raw_data.png) | ![cleaned](https://github.com/julyndav/Python/blob/main/DOHMH%20Dog%20Bite%20Analysis/Images/cleaned_data.png) | 
 
-<br></br>
 
 ## Breed Consolidation
 Paring down over 1k dog breeds was the most time consuming part of the analysis but essential to ensure uniformity and consistency. With over 1000 different dog breeds, many of which might be variations or mixed breeds, it would be challenging to draw meaningful insights. By consolidating similar breeds the dataset will be more manageable. 
