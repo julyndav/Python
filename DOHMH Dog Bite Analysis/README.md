@@ -147,3 +147,52 @@ The breeds were condensed down to 296 breeds.
 | 7 | Top 10|
 | 8 | Month, Year Breakdown |
 | 9 | Conclusion and Reccomendations |
+<p></p>
+
+
+### Column Details:
+Viewing the unique values of each column for this analysis is possible because the data set is small, making it manageable. Understanding these values can help identify data patterns, anomalies, or other potential data quality issues. It also aids in selecting analysis techniques to better understand the data's structure. This approach may not be feasible with a large data set due to its size and complexity.<p>
+
+#### Column Details: Values 
+<i>** Note that the 'UniqueID' column was dropped due to duplication issues. Breed is not listed here due to amount of values.</i>
+<ul><li> Species - Dog (even though goat and alpaca were present they were listed under 'Dog' for species).</li>
+    <li> Gender - (M)ale, (F)emale, (U)nknown.</li>
+    <li> Spay/Neuter - (Y)es, (N)o </li>
+    <li> Boroughs - Bronx, Queen, Manhattan, Brooklyn, Staten Island, Other.</li> 
+    <li> Months - All 12 months present.</li>
+    <li> Years - 2015 through 2021.</li>
+</ul
+<br></br>
+
+#### Gender Distribution
+For this section the analysis will look into:
+1. How many dog per gender/what is the percentage of each?
+2. Spay/Neutered percentage overall and per gender?
+
+The code for the total number and percentage was a bit extensize has it placed the separte visualizations side by side along with incorporating bar labels and an external legend.
+
+![Gender_dist](https://github.com/julyndav/Python/blob/main/DOHMH%20Dog%20Bite%20Analysis/Images/gender_dist.png)<p></p>
+
+The genders were also separated out in terms of Spay/Neuter percentages.<p>
+![gendr_snprcnt](https://github.com/julyndav/Python/blob/main/DOHMH%20Dog%20Bite%20Analysis/Images/gendr_spnt.png)
+
+
+
+**Gender Insights:**
+<ul>
+  <li>Female dogs make up about 15% of the data. </li>
+  <li>With almost 50% with gender unknown, it points to the dog running away after the bite incident</li>
+  <li>Total number of dogs: 22658</li>
+  <li>Number of dogs that have been Spayed/Neutered: 5875</li>
+  <li>Number of dogs NOT Spayed/Neautered:16783</li>
+</ul>
+The percentages of "fixed" (spayed/neutered) was also visualized.  26% were yes while 74% of the dog have not been fixed.
+A small percentage (0.6%) of dogs with an unknown gender were recorded as being spayed or neutered. This discrepancy raises questions about the accuracy of the data. How to have the spay/neuter status recorded without knowing the gender of the dog?
+<br></br>
+
+#### Age Analysis
+Earlier in the data cleaning phase, the 'Age' column was reviewed after correcting the vaules and setting the data type. There were some outliers (ages over 20yrs) that were filtered out leaving the ages from 0-20. <p>
+Out of curiosity, dogs that had reached 20yrs of age were singled out. This was done with a short section of python code.<p>
+![olddogs](https://github.com/julyndav/Python/blob/main/DOHMH%20Dog%20Bite%20Analysis/Images/old_dogs.png)
+
+
