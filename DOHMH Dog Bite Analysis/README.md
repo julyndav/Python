@@ -39,14 +39,14 @@ Perform an exploratory analysis of dog bite data using Python to find any genera
 ### Dog_Bite_Data Table:
 | Variable | Purpose |
 | --- | --- |
-| UniqueID | User's unique identifier |
-| DateofBite | User's device |
-| Speices |Session start date and time |
-| Breed | session end date and time |
-| Age | Identifier of the ad source the user came from |
-| Gender |Session start date and time |
-| Spay/Neuter | session end date and time |
-| ZipCode | Identifier of the ad source the user came from |
+| UniqueID | Unique dog bite case identifier |
+| DateofBite | Date bitten |
+| Speices | Animal Type |
+| Breed | Breed type |
+| Age | Dog's age at time of bite. |
+| Gender | Sex of Dog |
+| Spay/Neuter | Surgical removal of dog's reproductive organs. |
+| ZipCode | Dog bite Zipcode. |
 <p></p>
 <br>
 
