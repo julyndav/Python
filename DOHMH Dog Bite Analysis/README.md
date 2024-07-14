@@ -194,5 +194,38 @@ A small percentage (0.6%) of dogs with an unknown gender were recorded as being 
 Earlier in the data cleaning phase, the 'Age' column was reviewed after correcting the vaules and setting the data type. There were some outliers (ages over 20yrs) that were filtered out leaving the ages from 0-20. <p>
 Out of curiosity, dogs that had reached 20yrs of age were singled out. This was done with a short section of python code.<p>
 ![olddogs](https://github.com/julyndav/Python/blob/main/DOHMH%20Dog%20Bite%20Analysis/Images/old_dogs.png)
+<br></br>
 
+![age](https://github.com/julyndav/Python/blob/main/DOHMH%20Dog%20Bite%20Analysis/Images/age-graph.png)<p>
+
+**Age Insight(s):**<p>
+Most dogs ages are unknown. It's why the records with 'null'/'unknown' for the 'Age' values were kept; It's not uncommon for a dog to run off after an attack or for the dog to be unknown to the person bit, but the record is still valid so 0 age value were kept.
+<br></br>
+
+#### Borough Analysis:
+This section will focus on:
+<ul>
+  <li>Number of Bites per borough.</li>
+  <li>How many dogs have been spayed/neuter.</li>
+  <li>Gender totals for each borough.</li>
+  <li>Lastly, which dog breed had the highest rate of incidences for each borough.</li>
+</ul>
+<p></p>
+
+![dog_count_brgh](https://github.com/julyndav/Python/blob/main/DOHMH%20Dog%20Bite%20Analysis/Images/borough_dogCount.png) <p></p> 
+Queens and Manhattan are leading the boroughs in terms of bites. Now to see some data on the genders as they pertain to the neighborhoods.<p>
+
+![pp](https://github.com/julyndav/Python/blob/main/DOHMH%20Dog%20Bite%20Analysis/Images/borough_spy_gndr.png) <p>
+
+**Borough Insight(s):**
+1. The majority of dog bites in Queens involve non-spayed/neutered males or dogs of unknown spay/neuter status. This pattern is consistent across other boroughs.
+2. Two-thirds of the top breeds responsible for biting incidents are Pit Bulls, followed by dogs of unknown breed. Manhattan has the highest rate of unknown dog breeds involved in biting incidents, exceeding the number of Pit Bull-related bites in the Bronx, Brooklyn, Queens, and Staten Island.
+3. Further research is needed to understand the significance of spaying/neutering in relation to the likelihood of dogs biting.
+<br></br>
+
+#### Top 10 Dog Breeds
+
+![top10dogs](https://github.com/julyndav/Python/blob/main/DOHMH%20Dog%20Bite%20Analysis/Images/top10.png)
+
+4 out of the Top 10 breeds are small breed dogs. 
 
