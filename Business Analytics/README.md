@@ -11,7 +11,7 @@ By doing so, we can identify key factors to help the marketing department from Y
 
 ## Table of Contents:
 
-[Jupyter Notebook](https://github.com/julyndav/Python/blob/main/Business%20Analytics/BA_Yandex_Afisha_JupNtbk_07072024.ipynb)
+[Jupyter Notebook](https://github.com/julyndav/Python/blob/main/Business%20Analytics/YandexAfisha_BA.ipynb)
 <br></br>
 
 ### Skills Demostrated:
