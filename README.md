@@ -4,8 +4,7 @@ Welcome to my Python projects repository! Here, you will find a collection of my
 ## Projects
 | Project | Description |
 | --- | --- |
-| DOHMH Dog Bite Analysis (EDA) | Comprehensive exploratory analysis of dog bite data from NYC area from 2015-2021  |
-| Numpy | Used for numerical operations on large quantities of data |
-| Seaborn | Python visualization library based on matplotlib |
-| Matplotlib | Python visualization library |
+| [DOHMH Dog Bite Analysis (EDA](https://github.com/julyndav/Python/tree/main/DOHMH%20Dog%20Bite%20Analysis) | Comprehensive exploratory analysis of dog bite data from NYC area from 2015-2021  |
+| [Business Analytics](https://github.com/julyndav/Python/tree/main/Business%20Analytics) | Optimize marketing expenses through data and cohort analysis along with data visualizaiton |
+
 <br></br>
