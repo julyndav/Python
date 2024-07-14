@@ -164,7 +164,7 @@ Viewing the unique values of each column for this analysis is possible because t
 </ul
 <br></br>
 
-#### Gender Distribution
+#### Gender Distribution:
 For this section the analysis will look into:
 1. How many dog per gender/what is the percentage of each?
 2. Spay/Neutered percentage overall and per gender?
@@ -190,7 +190,7 @@ The percentages of "fixed" (spayed/neutered) was also visualized.  26% were yes 
 A small percentage (0.6%) of dogs with an unknown gender were recorded as being spayed or neutered. This discrepancy raises questions about the accuracy of the data. How to have the spay/neuter status recorded without knowing the gender of the dog?
 <br></br>
 
-#### Age Analysis
+#### Age Analysis:
 Earlier in the data cleaning phase, the 'Age' column was reviewed after correcting the vaules and setting the data type. There were some outliers (ages over 20yrs) that were filtered out leaving the ages from 0-20. <p>
 Out of curiosity, dogs that had reached 20yrs of age were singled out. This was done with a short section of python code.<p>
 ![olddogs](https://github.com/julyndav/Python/blob/main/DOHMH%20Dog%20Bite%20Analysis/Images/old_dogs.png)
@@ -218,14 +218,36 @@ Queens and Manhattan are leading the boroughs in terms of bites. Now to see some
 ![pp](https://github.com/julyndav/Python/blob/main/DOHMH%20Dog%20Bite%20Analysis/Images/borough_spy_gndr.png) <p>
 
 **Borough Insight(s):**
-1. The majority of dog bites in Queens involve non-spayed/neutered males or dogs of unknown spay/neuter status. This pattern is consistent across other boroughs.
-2. Two-thirds of the top breeds responsible for biting incidents are Pit Bulls, followed by dogs of unknown breed. Manhattan has the highest rate of unknown dog breeds involved in biting incidents, exceeding the number of Pit Bull-related bites in the Bronx, Brooklyn, Queens, and Staten Island.
-3. Further research is needed to understand the significance of spaying/neutering in relation to the likelihood of dogs biting.
+<ul>
+<li>The majority of dog bites in Queens involve non-spayed/neutered males or dogs of unknown spay/neuter status. This pattern is consistent across other boroughs.</li>
+<li>Two-thirds of the top breeds responsible for biting incidents are Pit Bulls, followed by dogs of unknown breed. Manhattan has the highest rate of unknown dog breeds involved in biting incidents, exceeding the number of Pit Bull-related bites in the Bronx, Brooklyn, Queens, and Staten Island.</li>
+<li>Further research is needed to understand the significance of spaying/neutering in relation to the likelihood of dogs biting.</li>
+</ul>
 <br></br>
 
-#### Top 10 Dog Breeds
+#### Top 10 Dog Breeds:
 
 ![top10dogs](https://github.com/julyndav/Python/blob/main/DOHMH%20Dog%20Bite%20Analysis/Images/top10.png)
 
 4 out of the Top 10 breeds are small breed dogs. 
+<br></br>
 
+#### Month/Year Analysis:
+
+![time](https://github.com/julyndav/Python/blob/main/DOHMH%20Dog%20Bite%20Analysis/Images/time.png)<p></p>
+
+**Insights:**
+<ul>
+  <li>From 2015-2019 the number of bites were fairly constent with a drop happing at 2020. More research needed to see if the drop in bites was due to the Pandemic lockdowns.</li>
+<li>The monthly segment showed that dog bites increased during the spring/summer months when more people are outside.</li>
+</ul>
+<br></br>
+
+## Conclusions:
+The dataset contains two problematic variables: 'UniqueID' and 'Unknown' Gender. To improve data quality, it is advisable to handle the original data for each year separately. By cleaning and preparing each year's data individually before merging, we can ensure that the issue of duplication with the 'UniqueID' variable will not affect any other analysis using the dataset. Although the integrity of the dataset wasn't entirely compromised, as I was able to complete my analysis after removing the 'UniqueID' column.
+
+## Recommendations:
+1. For future datasets, it may be useful to employ pre-populated drop down menus or data validation when logging bite data into spreadsheet. This will add consistency to the 'Breed' and 'Age' columns.
+2. If possible, research into why so many dogs have not been spayed/neutered. Are there subsidzed programs available to NYC residents to help offset vet cost?
+3. How is the bite data collected? Having an online form may increase data integrity in the future.
+   
