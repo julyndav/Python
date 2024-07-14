@@ -135,4 +135,15 @@ The breeds were condensed down to 296 breeds.
 
 # Exploratory Analysis & Visualizations
 
-
+## Steps:
+| Step |Description |
+| --- | --- |
+| 1 | Determine & load custom color pallete |
+| 2 | Column details - Breakdown each column by it's values |
+| 3 | Gender distribution |
+| 4 | Spay/Neuter Percentage? |
+| 5 | Age Analysis |
+| 6 | Boroughs |
+| 7 | Top 10|
+| 8 | Month, Year Breakdown |
+| 9 | Conclusion and Reccomendations |
