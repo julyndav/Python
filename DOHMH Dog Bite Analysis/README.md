@@ -12,6 +12,16 @@ Processe and analyze 20K+ records spanning 2015 through 2021 from the New York C
 [Kaggle Link to Dataset](https://www.kaggle.com/datasets/muhmiqbal/dog-bites-nyc)
 <br></br>
 
+### Skills Demostrated
+<ul>
+<li>Python</li>
+<li>Pandas</li>
+<li>Data cleaning </li>
+<li>Creating Calculated Columns</li>
+<li>Exploratory Analysis</li>
+<li>Data Visualisation</li>
+</ul>
+<br></br>
 
 ## Challenge Project Rundown:
 ### Objectives:
@@ -35,30 +45,32 @@ Perform an exploratory analysis of dog bite data using Python to find any genera
 </ul>  
 <p>
   
-### Processing Data:
+### Processing Data Overview:
 <ul>
-<li>Additional Panda libraries were added for visualizations and custom color scheme.</li>
-<li>Data was cleaned which included; removing/manipulation 'null' values, handling duplicates and setting data types</li>
-<li>'Spay/Neuter' column changed to 'Y' and 'N'. </li>
-<li>Year and Month were extracted from the'DateOfBite' column.</li>
-  
+<li>Additional Panda libraries were added for visualizations.</li>
+<li>Imported data into the Jupyter platform.</li>
+<li>Explore data content and structure using '.head()','.info()', 'describe(). </li>
+<li>Data Cleaning; missing/null values, correcting data types, handeling duplicates and standardizing formats.</li>
+<li>Transform data, particularly date values.</li>
+<li>Checking for discrepancies or anomalies.</li>
 </ul>
 <p></p>
-  
-### Skills Demostrated
-<ul>
-<li>Python</li>
-<li>Data cleaning </li>
-<li>Creating Calculated Columns</li>
-<li>Exploratory Analysis</li>
-<li>Data Visualisation</li>
-</ul>
-<br></br>
-
-
+ <br> 
 
 # Analysis
-After the initial cleaning and data preparation, here are the results: 
+<p></p>
+
+### Data Cleaning
+After running the '.info()' function, it gave a rundown of the dataset.<p>
+<ul> <li> Null Values - 3 columns contained null values: 'Breed', 'Age' and 'ZipCode' contained null values.</li>
+            1. 'Breed' null values - changed to 'Unknown'.<p>
+            2. 'Age' null values - changed to (0) and all values kept.<p>
+            3. 'ZipCode' null values - changed to (0) and all values kept.<p>
+    <li> Duplicates - Almost half of the 'UniqueID's were duplicated. .</li>
+    <li> Data Types - Data types set.</li>
+            1. Outliers removed from 'Age'.<p>
+            2. Date column formatted. Year and Month extracted from date into new columns.<p>
+</ul>
 
 ### Key points that the unique values are showing us? 
 <ul> <li> UniqueID - there are a total 10773 dogs in the study</li>
