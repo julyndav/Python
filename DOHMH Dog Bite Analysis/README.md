@@ -84,6 +84,9 @@ After running the '.info()' function, it gave a rundown of the dataset.<p>
   <li>'ZipCode' null values - changed to (0) and all values kept</li>
 </ul>  
 <li>Duplicates - Almost half of the 'UniqueID's were duplicated.</li>
+  <ul>
+    <li>Looking into the 'UniqueID' column, it was discovered that the duplicated ID's were for separate records. With the column losing it's integrity, it was dropped from the dataset and analysis.</li>
+  </ul>
 <li>Data Types - Data types set.</li>
 <UL>
 <li>Outliers removed from 'Age'.</li>
@@ -103,32 +106,35 @@ After running the '.info()' function, it gave a rundown of the dataset.<p>
 
 
 ### Key points that the unique values are showing us? 
-<ul> <li> UniqueID - there are a total 10773 dogs in the study</li>
-    <li> DateOfBite - 2331 dates that bites took place.</li>
+<ul> <li> DateOfBite - 2331 dates that bites took place.</li>
     <li> Species - Only 1 species present in the data/study</li>
-    <li> Breed - We have 1010 breeds of dogs!</li>
+    <li> Breed - There are 1652 breeds of dogs!</li>
     <li> Gender - 3 types of genders are present.</li>
     <li> Boroughs - 6 Boroughs or neighboohds. </li>
-    <li> BiteMonth - 12, giving data for a year.</li>  
+    <li> BiteMonth - 12, giving data for an entire year.</li>  
     <li> BiteYear - Study contains 7 years worth of data.</li>
 </ul
 <br></br>
 
-
-
 ## Breed Consolidation
-Paring down over 1k dog breeds was the most time consuming part of the analysis but essential to ensure uniformity and consistency. With over 1000 different dog breeds, many of which might be variations or mixed breeds, it would be challenging to draw meaningful insights. By consolidating similar breeds the dataset will be more manageable. 
+Paring down over 1.6k dog breeds was the most time consuming part of the analysis but essential to ensure uniformity and consistency. Many of the breeds listed are variations of a main breed, it would be challenging to draw meaningful insights with so many breeds. By consolidating similar breeds the dataset will be more manageable. 
 
 <ul>
-<li>First to count the number of unique values in the 'Breed' column. The result was <b>1010 different breeds</b></li>
+<li>First to count the number of unique values in the 'Breed' column. The result was <b>1652 different breeds</b></li>
 <li>The unique breed values were listed then revised.</li>
-<li>Due to the size of the list, it was broken down into two sections.</li>
+<li>Due to the size of the list, this section of code is extensive.</li>
+<li>A goat and an alpaca were part of the data so they were removed.</li>  
 </ul>
 <p></p>
 
-![breed_consol](https://github.com/julyndav/Python/blob/main/DOHMH%20Dog%20Bite%20Analysis/Images/breed_manip.png)
+![breed_consol](https://github.com/julyndav/Python/blob/main/DOHMH%20Dog%20Bite%20Analysis/Images/breed_manip.png) <p></p>
 
-### Overview Insights: 
+The breeds were condensed down to 296 breeds.
+<br></br>
+
+
+# Exploratory Analysis & Visualizations
+
 <b>Online Sales:</b>
 With 59% of purchases done online, there is a clear trend towards digital transactions. Contactless and debit card usage could be from in station purchases. 
 
