@@ -1,5 +1,5 @@
 # Python Projects for Data Analysis
-Welcome to my Python projects repository! This collection showcases my expertise in data analytics, including data manipulation, visualization, and in-depth analysis. Each project reflects industry practices, covering everything from data cleaning and preprocessing to statistical analysis and machine learning, providing valuable insights and actionable results.
+Data Analysis with Python, demonstrating expertise in data extraction, cleaning, preparation, and manipulation. Projects include creating visualizations with various plotting libraries, as well as conducting exploratory and cohort analysis
 
 ## Projects
 | Project | Description |
