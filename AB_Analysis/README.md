@@ -1,6 +1,20 @@
+## A_B-Testing Project overview:
+Together with the marketing department, a list has been compiled of hypotheses that may help boost revenue. 
+My goal is to prioritize these hypotheses, launch an A/B test, and analyze the results. 
+<br></br>
+
 ## Table of Contents:
 [Jupyter Notebook](https://github.com/julyndav/A_B-Testing/blob/main/A_B%20Testing.ipynb)
-<br></br>
+<p></p>
+
+### Skills Demostrated:
+<ul>
+<li>Extract and Loading Data</li>   
+<li>Python (for data cleaning, data manipulation and exploratory analysis)</li>
+<li>Data Manipulation (Pandas and NumPy for handling and transforming data)</li>
+<li>Statistical Knowledge(apply statistical tests and understand their results)</li>
+</ul>
+<br>
 
 ## Required Project Libraries:
 | Library |Purpose |
@@ -10,22 +24,42 @@
 | Seaborn | Python visualization library based on matplotlib |
 | Matplotlib | Python visualization library |
 
-<p>
-  
-### Skills Demostrated:
-<ul>
-<li>Extract and Loading Data</li>   
-<li>Python (for data cleaning, data manipulation and exploratory analysis)</li>
-<li>Data Manipulation (Pandas and NumPy for handling and transforming data)</li>
-<li>Statistical Knowledge(apply statistical tests and understand their results)</li>
-</ul>
+<br>
+
+  ## Description of the data
+<p></p>
+
+### Visits table:
+| Variable | Purpose |
+| --- | --- |
+| Uid | User's unique identifier |
+| Device | User's device |
+| Start Ts |Session start date and time |
+| End Ts | session end date and time |
+| Source Id | Identifier of the ad source the user came from |
+<p></p>
+
+### Orders table:
+| Variable | Purpose |
+| --- | --- |
+| Uid | Unique identifier of the user making an order |
+| Buy Ts | Order date and time |
+| Revenue | Revenue from the order |
+<p></p>
+
+### Costs table: 
+<i>Data on marketing expenses</i>
+| Variable | Purpose |
+| --- | --- |
+| Source_id | Ad source identifier |
+| dt | Date |
+| costs | Expenses for ad source |
+<p></p>
 <br></br>
 
 
-## A_B-Testing Project overview:
-Together with the marketing department, a list has been compiled of hypotheses that may help boost revenue. 
-My goal is to prioritize these hypotheses, launch an A/B test, and analyze the results. 
-<br></br>
+
+
 
 ## Analysis Steps:
 | Step |Description |
