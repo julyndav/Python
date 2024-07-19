@@ -199,7 +199,7 @@ Promotional discounts(#8) and adding channels to bring in more traffic(#0) both 
 12. Find the statistical significance of the difference in average order size between the groups using the filtered data. 
 <p></p>
 
-#### 1. Graph cumulative revenue by group. 
+#### Cumulative revenue by group. 
 <ul>
   <li>Using the table/dataframe that was created from filtering users in multiple groups.</li>
   <li>An array is built ('datesGroups') with unique paried date-group values.</li>
@@ -217,15 +217,24 @@ Promotional discounts(#8) and adding channels to bring in more traffic(#0) both 
 </ul>
 <p></p>
 
-#### 2. Graph cumulative average order size by group
-<i> No new data frames need to be created.  The 'cumulativeData' df will be used to determine the average order size per group.</i>
+#### 2.Cumulative average order size by group
+<i> No new data frames need to be created. The 'cumulativeData' df will be used to determine the average order size per group.</i>
 
+| Cummulative Revenue by Group     | Cumulative Average Order Size by Group      | 
+| ----------------------------------- | ----------------------------------- | 
+![rev_grp](https://github.com/julyndav/Python/blob/main/AB_Analysis/images/c_rev_grp.png) | ![avg_os](https://github.com/julyndav/Python/blob/main/AB_Analysis/images/c_order_group.png) | 
 
+<p></p>
+<b>Insights:</b> Once again Group B has exceeded Group A results and at the same time frame of 2019-8-17 which is where Group B spiked. After B's spike, it is slowing trending downward. Group A, once it had reached it's peak at 2019-8-13, it seems to level off and stay constent.<p>
+  
+When reviewing the relative difference in order size between the groups, there are 2 points where the difference between the groups spikes. There must be some abnormally large orders placed. This will be looked into further in the analysis process.
 
+Looking further into orders, the original 'orders' table was used for analysis as groups/revenue are not the focus for this section of the analysis. Let's get a visual on the scatter plot on orders by users.
+ ![ordres_users](https://github.com/julyndav/Python/blob/main/AB_Analysis/images/order_by_user.png)
 
+As determined early in the analysis process, there are order spikes as shown in the table and scatterplot. 4 orders have higher than normal order sizes with 2 orders almost maxing out. 
 
-
-
+#### 95th and 99th percentiles for orders by users (#5,6)
 
 
 
