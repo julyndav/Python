@@ -234,10 +234,13 @@ Looking further into orders, the original 'orders' table was used for analysis a
 
 As determined early in the analysis process, there are order spikes as shown in the table and scatterplot. 4 orders have higher than normal order sizes with 2 orders almost maxing out. 
 
-#### 95th and 99th percentiles for orders by users (#5,6)
-
-
-
+#### 6. 95th and 99th percentiles for orders by users 
+A brief section of code will provide the percentiles for the orders: <b> np.percentile(orders_by_users['orders'], [90, 95, 99]) </b>
+<ul>
+<li>90% of users have placed 1 or fewer orders.</li>
+<li>95% of users have placed 2 or fewer orders.</li>
+<li>99% of users have placed 4 or fewer orders.</li>
+</ul>
 
 
 
