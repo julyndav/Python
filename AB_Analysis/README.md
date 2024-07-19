@@ -1,4 +1,4 @@
-## A_B-Testing Project overview:
+## A/B Testing Project overview:
 Together with the marketing department, a list has been compiled of hypotheses that may help boost revenue. 
 My goal is to prioritize these hypotheses, launch an A/B test, and analyze the results. The analsys will incorporate cummalitive averages, exploring outliers and looking at conversion rates.
 <br></br>
@@ -171,7 +171,16 @@ Now to take the scores for the hypotheses and see which ones have the potential 
 
 ![ice_rice](https://github.com/julyndav/Python/blob/main/AB_Analysis/images/comparison.png)
 
+Now to compare the results of both the ICE and RICE analysis:
 
+![comp_icerice](https://github.com/julyndav/Python/blob/main/AB_Analysis/images/ice_rice.png)
+
+### Conclusion for Prioritizing Hypotheses:
+From both of the ICE and RICE plots, we get a better visual of how the two represent the hypotheses presented. We can see that numbers 3, 4 and 5 can be dropped; they performed poorly on both spectrums. Changing the category structure(#3), background color(#4) and adding a customer review page(#5) would have no significant effects customer base or revenue. These seem to be 'cosmetic' changes.
+
+The 5 Hypotheses that should be focused on are numbers 7, 0, 2, 6 and 8. From those 5, the top three would be 7, 8 and 0. Hypothesis 7 maintained good standing in both ICE and RICE categories. Subscription forms are an excellent way to retain current visitors and give new visitors more insights into what the company is doing and has to offer.
+
+Promotional discounts(#8) and adding channels to bring in more traffic(#0) both garner focus in increasing customer base and revenue. Even though (#8) performed poorly in terms of RICE; it did so well in the ICE category that it brought it in line with the second best hypothesis(#0). Reaching more visitors and giving discounts have been proven industry actioons in increasing customer base and revenue potential.
 
 
 
