@@ -200,7 +200,15 @@ Promotional discounts(#8) and adding channels to bring in more traffic(#0) both 
 <p></p>
 
 #### 1. Graph cumulative revenue by group. 
+<ul>
+  <li>Using the table/dataframe that was created from filtering users in multiple groups.</li>
+  <li>An array is built ('datesGroups') with unique paried date-group values.</li>
+  <li>The newly created 'datesGroup' table is used in conjunction with the 'visits' df to create a table that will bring together the 'Group', 'date', and how many visits per group.</li>
 
+  ![visit_grps](https://github.com/julyndav/Python/blob/main/AB_Analysis/images/visit_group.png)
+
+  <li>The 'orders' table is also grouped together</li>
+</ul>
 
 
 
