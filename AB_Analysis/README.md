@@ -9,7 +9,17 @@
 | Seaborn | Python visualization library based on matplotlib |
 | Matplotlib | Python visualization library |
 
+<p>
+  
+### Skills Demostrated:
+<ul>
+<li>Extract and Loading Data</li>   
+<li>Python (for data cleaning, data manipulation and exploratory analysis)</li>
+<li>Data Manipulation (Pandas and NumPy for handling and transforming data)</li>
+<li>Statistical Knowledge(apply statistical tests and understand their results)</li>
+</ul>
 <br></br>
+
 
 ## A_B-Testing Project overview:
 From a supplied dataset, work with provided hypotheses from a marketing department using the concepts of Reach, Impact, Confidence and Effort to determine
