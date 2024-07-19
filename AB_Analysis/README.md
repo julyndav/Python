@@ -23,6 +23,7 @@ My goal is to prioritize these hypotheses, launch an A/B test, and analyze the r
 | Numpy | Used for numerical operations on large quantities of data |
 | Seaborn | Python visualization library based on matplotlib |
 | Matplotlib | Python visualization library |
+| SciPy | For statistical operations |
 
 
 ## Description of the data
