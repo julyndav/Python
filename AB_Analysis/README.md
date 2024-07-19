@@ -26,39 +26,37 @@ My goal is to prioritize these hypotheses, launch an A/B test, and analyze the r
 
 <br>
 
-  ## Description of the data
+## Description of the data
 <p></p>
 
-### Visits table:
+### Hypotheses table:
 | Variable | Purpose |
 | --- | --- |
-| Uid | User's unique identifier |
-| Device | User's device |
-| Start Ts |Session start date and time |
-| End Ts | session end date and time |
-| Source Id | Identifier of the ad source the user came from |
+| Hypotheses | Brief descriptions of the hypotheses |
+| Reach | User reach, on a scale of one to ten |
+| Impact |impact on users, on a scale of one to ten |
+| Confidence | confidence in the hypothesis, on a scale of one to ten |
+| Effort | the resources required to test a hypothesis, on a scale of one to ten. The higher the Effort value, the more resource-intensive the test |
 <p></p>
 
 ### Orders table:
 | Variable | Purpose |
 | --- | --- |
-| Uid | Unique identifier of the user making an order |
-| Buy Ts | Order date and time |
-| Revenue | Revenue from the order |
+| transactionId | order identifier |
+| visitorId | identifier of the user who placed the order |
+| date | of the order |
+| revenue | from the order |
+| group | the A/B test group that the user belongs to | 
 <p></p>
 
-### Costs table: 
-<i>Data on marketing expenses</i>
+### Visits table: 
 | Variable | Purpose |
 | --- | --- |
-| Source_id | Ad source identifier |
-| dt | Date |
-| costs | Expenses for ad source |
-<p></p>
+| date | date |
+| group | A/B test group |
+| visits | the number of visits on the date specified in the A/B test group specified |
+
 <br></br>
-
-
-
 
 
 ## Analysis Steps:
