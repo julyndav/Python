@@ -1,6 +1,6 @@
 ## A_B-Testing Project overview:
 Together with the marketing department, a list has been compiled of hypotheses that may help boost revenue. 
-My goal is to prioritize these hypotheses, launch an A/B test, and analyze the results. 
+My goal is to prioritize these hypotheses, launch an A/B test, and analyze the results. The analsys will incorporate cummalitive averages, exploring outliers and looking at conversion rates.
 <br></br>
 
 ## Table of Contents:
@@ -37,7 +37,7 @@ My goal is to prioritize these hypotheses, launch an A/B test, and analyze the r
 | Impact |impact on users, on a scale of one to ten |
 | Confidence | confidence in the hypothesis, on a scale of one to ten |
 | Effort | the resources required to test a hypothesis, on a scale of one to ten. The higher the Effort value, the more resource-intensive the test |
-<p></p>
+<p>
 
 ### Orders table:
 | Variable | Purpose |
@@ -47,7 +47,7 @@ My goal is to prioritize these hypotheses, launch an A/B test, and analyze the r
 | date | of the order |
 | revenue | from the order |
 | group | the A/B test group that the user belongs to | 
-<p></p>
+<p>
 
 ### Visits table: 
 | Variable | Purpose |
@@ -66,16 +66,62 @@ My goal is to prioritize these hypotheses, launch an A/B test, and analyze the r
 | 2 | Import libraries |
 | 3 | Upload and analyize data |
 | 4 | Data cleaning and preparation |
-| 5 | Prioritize hypothese using two framework models |
+| 5 | Prioritize hypothese |
 | 6 | Determining how prioritzation changes between the two models |
 | 7 | Apply A/B Testing to the models |
 | 8 | Determine the best hypothese |
 | 9 | Project Conclusion(s) |
 
 <br></br>
+## Hypotheses Gathered by Marketing Department:
+<ul>
+<li>Add two new channels for attracting traffic. This will bring 30% more users</li>
+<li>Launch your own delivery service. This will shorten delivery time</li>
+<li>Add product recommendation blocks to the store's site. This will increase conversion and average purchase size</li>
+<li>Change the category structure. This will increase conversion since users will find the products they want more quickly</li>
+<li>Change the background color on the main page. This will increase user engagement</li>
+<li>Add a customer review page. This will increase the number of orders
+<li>Show banners with current offers and sales on the main page. This will boost conversion
+<li>Add a subscription form to all the main pages. This will help you compile a mailing list
+<li>Launch a promotion that gives users discounts on their birthdays
+</li>
+</ul>
+
+<br></br>
+# Analysis Overview:
+
+## Data Cleaning and Preparation:
+<OL>
+<li> After initial review of Hypotheses table, there was no data cleaning or processing needed for the hypotheses dataframe.</li>
+<li>Orders table:</li>
+<UL>
+<li>Code was adjusted in importing datasets by the use of 'parse' for the date.</li>
+<li>Duplicates where checked in the 'visitorID' column. Duplicates were dropped.</li>   
+</UL>
+<li>Visits table:
+  <ul>
+    <li>After first inital running of visits df, group and date columns were object data types.</li>
+    <li>Code was adjusted in importing datasets by the use of 'parse' and dtype.</li>
+  </ul>
+</OL>
+<p></p>
+
+### Group Check
+There might be mistakes in the original datasets; for example, some of the visitors might have gotten into both group A and group B. Now to check the visior df. Going off of first visits, we'll see if any visitors are in both groups.<p>
+<ul>
+  <li>Review 'orders' table.</li>
+  <li>Find the first group each user has visited 'first_group'.</li>
+  <li>Merge first visit group with 'orders' df to see if visitor has been to another group.</li>
 
 
-We'll use frameworks to as a comparison for the hypotheses to determine the best ones. This framework involves:<br><li>
+![user_groups](https://github.com/julyndav/Python/blob/main/AB_Analysis/images/AB%20Groups.png)<p>
+<li> We can see from the third transaction, that the visitor has been in two groups. This is what we wanted to detect.</li>
+<li>Using '.value_counts' function, the number of occurrences for each user was listed. </li>
+</ul>
+<p></p>
+
+
+Frameworks will be used as a comparison for the hypotheses to determine the best ones. This framework involves:<br><li>
 Reach — how many users will be affected by the update you want to
 introduce<li>
 Impact — how strongly this update will affect the users, their experience, and
@@ -99,18 +145,7 @@ Here's a snippet of how the comparison rates faired:
 ![Comparisongrouprates](https://github.com/julyndav/A_B-Testing/blob/main/images/comprison%20groups.png)
 
 
-## Brief Analysis Overview:
-The analsys will incorporate cummalitive averages, exploring outliers and looking at conversion rates. 
-Hypothese that will be tested are:<br><li>
-Add two new channels for attracting traffic. This will bring 30% more users<li>
-Launch your own delivery service. This will shorten delivery time<li>
-Add product recommendation blocks to the store's site. This will increase conversion and average purchase size<li>
-Change the category structure. This will increase conversion since users will find the products they want more quickly<li>
-Change the background color on the main page. This will increase user engagement<li>
-Add a customer review page. This will increase the number of orders<li>
-Show banners with current offers and sales on the main page. This will boost conversion<li>
-Add a subscription form to all the main pages. This will help you compile a mailing list<li>
-Launch a promotion that gives users discounts on their birthdays
+
 
 
 
