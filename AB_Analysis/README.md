@@ -181,6 +181,25 @@ From both of the ICE and RICE plots, we get a better visual of how the two repre
 The 5 Hypotheses that should be focused on are numbers 7, 0, 2, 6 and 8. From those 5, the top three would be 7, 8 and 0. Hypothesis 7 maintained good standing in both ICE and RICE categories. Subscription forms are an excellent way to retain current visitors and give new visitors more insights into what the company is doing and has to offer.
 
 Promotional discounts(#8) and adding channels to bring in more traffic(#0) both garner focus in increasing customer base and revenue. Even though (#8) performed poorly in terms of RICE; it did so well in the ICE category that it brought it in line with the second best hypothesis(#0). Reaching more visitors and giving discounts have been proven industry actioons in increasing customer base and revenue potential.
+<br></br>
+
+## A/B Test Analysis
+#### Steps for the A/B analysis:
+1. Graph cumulative revenue by group.  
+2. Graph cumulative average order size by group.
+3. Graph the relative difference in cumulative average order size for group B compared with group A. 
+4. Calculate each group's conversion rate as the ratio of orders to the number of visits for each day. Plot the daily conversion rates of the two groups and describe the difference. 
+5. Plot a scatter chart of the number of orders per user. 
+6. Calculate the 95th and 99th percentiles for the number of orders per user. Define the point at which a data point becomes an anomaly.
+7. Plot a scatter chart of order prices. 
+8. Calculate the 95th and 99th percentiles of order prices. Define the point at which a data point becomes an anomaly.
+9. Find the statistical significance of the difference in conversion between the groups using the raw data. 
+10. Find the statistical significance of the difference in average order size between the groups using the raw data. 
+11. Find the statistical significance of the difference in conversion between the groups using the filtered data. 
+12. Find the statistical significance of the difference in average order size between the groups using the filtered data. 
+<p></p>
+
+#### 1. Graph cumulative revenue by group. 
 
 
 
