@@ -226,16 +226,18 @@ Promotional discounts(#8) and adding channels to bring in more traffic(#0) both 
 ![rev_grp](https://github.com/julyndav/Python/blob/main/AB_Analysis/images/c_rev_grp.png) | ![avg_os](https://github.com/julyndav/Python/blob/main/AB_Analysis/images/c_order_group.png) | 
 
 <p></p>
-<b>Insights:</b> Once again Group B has exceeded Group A results and at the same time frame of 2019-8-17 which is where Group B spiked. After B's spike, it is slowing trending downward. Group A, once it had reached it's peak at 2019-8-13, it seems to level off and stay constent.<p>
+<b>Cummulative Insights:</b> Once again Group B has exceeded Group A results and at the same time frame of 2019-8-17 which is where Group B spiked. After B's spike, it is slowing trending downward. Group A, once it had reached it's peak at 2019-8-13, it seems to level off and stay constent.<p>
   
 When reviewing the relative difference in order size between the groups, there are 2 points where the difference between the groups spikes. There must be some abnormally large orders placed. This will be looked into further in the analysis process.
+<p></p>
 
+
+#### 6 - 8. 95th and 99th percentiles 
 Looking further into orders, the original 'orders' table was used for analysis as groups/revenue are not the focus for this section of the analysis. Let's get a visual on the scatter plot on orders by users.
- ![ordres_users](https://github.com/julyndav/Python/blob/main/AB_Analysis/images/order_by_user.png)
 
 As determined early in the analysis process, there are order spikes as shown in the table and scatterplot. 4 orders have higher than normal order sizes with 2 orders almost maxing out. 
 
-#### 6. 95th and 99th percentiles for orders by users 
+<b>Orders by Users</b><p>
 A brief section of code will provide the percentiles for the orders: <b> np.percentile(orders_by_users['orders'], [90, 95, 99]) </b>
 <ul>
 <li>90% of users have placed 1 or fewer orders.</li>
@@ -243,7 +245,39 @@ A brief section of code will provide the percentiles for the orders: <b> np.perc
 <li>99% of users have placed 4 or fewer orders.</li>
 </ul>
 
+<b>Order Prices</b>
+<p></p>
 
+| Orders by Users    | Order Prices    | 
+| ----------------------------------- | ----------------------------------- | 
+![rev_grp](https://github.com/julyndav/Python/blob/main/AB_Analysis/images/order_by_user.png) | ![avg_os](https://github.com/julyndav/Python/blob/main/AB_Analysis/images/order_by_prices.png) | 
+<p></p>
+<b>Order Prices Insight:</b> Now we can see what the previous spikes have created. Large order volumns in two instances giving us our anomalies. One order is $20K and another one is slightly above $2.5K. There are a few that are in range of $2K.<p>
 
+Percentiles for revenue: <b>np.percentile(orders['revenue'], [90, 95, 99]).round()</b>
 
+<ul>
+<li>5% placed orders that cost more than 436 USD.</li>
+<li>1% placed orders that cost more than 900 USD.</li>
+<li>Orders outside of the 1% range can be considered anomalies.</li>
+</ul>
 
+### 9-12 Statistical Significance
+<i>To view the actual coding process, see Jupyter notebook</i><p>
+The steps to determine statistical significance is relatively the same:
+<ul>
+<li>Prepares order data for groups A and B.</li>
+<li>Creates sample data for both groups, including users who did not place orders.</li>
+<li>Performs the Mann-Whitney U test to compare the two groups.</li>
+<li>Calculates the relative gain in conversion rate for groups.</li>
+<li>Conducts hypothesis testing to determine if the difference is statistically significant.</li>
+</ul>
+<p></p>
+
+#### 9. Difference in conversion between the groups using the raw data.
+The P-Value is: 0.0168<p>
+Group B's relative gain is: 0.1381
+
+Insight: The first value is P-value which is smaller than 0.05 so we can reject null hypothesis. After the relative gain is converted into a percentage, the relative conversion gain for Group B to Group A is 13.8%. The raw data analysis has shown that there is a difference between the two groups.
+
+   
