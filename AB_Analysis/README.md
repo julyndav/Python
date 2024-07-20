@@ -274,10 +274,46 @@ The steps to determine statistical significance is relatively the same:
 </ul>
 <p></p>
 
-#### 9. Difference in conversion between the groups using the raw data.
+#### 9. Difference in conversion between the groups using the Raw data.
 The P-Value is: 0.0168<p>
 Group B's relative gain is: 0.1381
 
-Insight: The first value is P-value which is smaller than 0.05 so we can reject null hypothesis. After the relative gain is converted into a percentage, the relative conversion gain for Group B to Group A is 13.8%. The raw data analysis has shown that there is a difference between the two groups.
+**Insight:** The first value is P-value which is smaller than 0.05 so we can reject null hypothesis. After the relative gain is converted into a percentage, the relative conversion gain for Group B to Group A is 13.8%. The raw data analysis has shown that there is a difference between the two groups.<p>
 
-   
+ #### 10. Difference in average order size between the groups using the Raw data.  
+*The P-Value is: 0.6915<p>*
+*Group B's relative gain is: 0.2517<p>*
+After 'Null and alternative Hypotheses testing':<p>
+*pvalue: 0.6915<p>*
+*Failed to reject null hypothesis: we can not make conclusions about the difference.*
+
+**Insight:** The P-value is greater than .05. The p-value is considerably higher than 0.05, so failed to reject the null hypothesis, thus no conclusions can be made on differences in average order size.<p>
+
+#### 11. Difference in conversion between the groups using Filtered data.
+I got 22 anomalous users after filtering the data. Now to find out how their actions affected the test results. We'll calculate the statistical significance of the differences in conversion between the groups, using filtered data.
+1. prepare samples of the number of orders per user for each test group.
+2. Applying the statistical Mann-Whitney criterion to the resulting samples.
+3. Null and alternative hypotheses testing<p>
+
+*P-value:  0.0136<p>*
+*Null hypothesis rejected: the difference is statistically significant<p>*
+**Insight:** With the hypothese rejected, removing the differences still resulted in group difference.
+
+#### 12. Difference in average order size between the groups using Filtered data.
+*The P-Value is: 0.6347*
+*Group B's relative gain is: -0.0979*<p>
+
+After 'Null and alternative Hypotheses testing':<p>
+*pvalue: 0.6347<p>*
+*Failed to reject null hypothesis: we can not make conclusions about the difference.*<p>
+P value has changed and also failed to reject hypothesis again, no conlusion from difference on this.
+
+**Insight:** Now that the anomalies have been removed, we can see how much things have changed. Between the groups with raw data was 13.8% with the filtered data it is now 16.8% a difference of 3%; not a significant diference but still there.
+
+On average order size with the raw data it was 25.2% and with the filtered data which removed the anomalies of the atypical orders sizes, Group B is in the negative. It just shows how much the atypical orders helped Group B out.
+
+# Conclusion for A/B Analysis:
+Although our general conclusions from the test didn't change, using the raw vs filtered data examples demonstrates clearly how anomalies can affect A/B test results. All it takes is 2-5 huge orders to skew the comparsion between the groups.
+Between the raw and filtered, Group B showed gains on Group A except were the order size was concerend. Removing the abnormally large orders, which caused the massive spike in the plot for 'Average Order size' for Group B, negated Group B's gain that it had on Group A in that category.
+
+Based on the overall results, I would suggest ending the test and going with Group B. Despite Group B's anomalies, they still garned the large orders from a few visitors which boosted the Groups revenue. It's obvious that the tested hypotheses of numbers 7, 0 and 8 really resonated with Group B
