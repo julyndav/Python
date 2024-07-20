@@ -19,3 +19,7 @@
 | [AB_Analysis](https://github.com/julyndav/Python/tree/main/AB_Analysis) | Assist Marketing Team in determining which group plan will boost revenue |
 
 <br></br>
+
+## Project Notes:
+
+</ul>
