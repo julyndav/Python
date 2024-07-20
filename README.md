@@ -11,7 +11,7 @@
 </ul>
 <p></p>
 
-## Projects
+## Project List
 | Project | Description |
 | --- | --- |
 | [DOHMH Dog Bite Analysis](https://github.com/julyndav/Python/tree/main/DOHMH%20Dog%20Bite%20Analysis) | Comprehensive exploratory analysis of dog bite data from NYC area from 2015-2021  |
