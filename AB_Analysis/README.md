@@ -1,19 +1,37 @@
 ## A/B Testing Project overview:
-Together with the marketing department, a list has been compiled of hypotheses that may help boost revenue. 
-My goal is to prioritize these hypotheses, launch an A/B test, and analyze the results. The analsys will incorporate cummalitive averages, exploring outliers and looking at conversion rates.
+This project analyzes an e-commerce A/B experiment designed to increase revenue through website and marketing improvements.
+
+<b>The analysis includes:</b>
+<ul>
+<li>Prioritizing marketing hypotheses using ICE and RICE frameworks</li>
+
+<li>Running an A/B test comparing two website variations</li>
+
+<li>Detecting anomalies in order behavior</li>
+
+Testing statistical significance of conversion and revenue differences
+</ul>
+The goal is to determine which changes should be implemented to maximize revenue.
 <br></br>
 
-## Table of Contents:
-[Jupyter Notebook](https://github.com/julyndav/A_B-Testing/blob/main/A_B%20Testing.ipynb)
-<p></p>
-
-### Skills Demostrated:
+### Tools and Skills Demonstrated:
 <ul>
-<li>Extract and Loading Data</li>   
-<li>Python (for data cleaning, data manipulation and exploratory analysis)</li>
-<li>Data Manipulation (Pandas and NumPy for handling and transforming data)</li>
-<li>Statistical Knowledge(apply statistical tests and understand their results)</li>
+<li>Python</li>   
+<li>Pandas / NumPy</li>
+<li>Data cleaning</li>
+<li>Exploratory data analysis</li>
+<li>Outlier detection</li>
+<li>Hypothesis testing</li>
+<li>A/B testing methodology</li>
+<li>Data visualization</li>
 </ul>
+<b>Libraries used:</b>
+<ul>
+<li>Pandas</li>
+<li>NumPy</li>
+<li>Matplotlib</li>
+<li>Seaborn</li>
+<li>SciPy</li>
 <br>
 
 ## Required Project Libraries:
