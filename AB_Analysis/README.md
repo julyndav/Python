@@ -1,94 +1,81 @@
-## A/B Testing Project overview:
-This project analyzes an e-commerce A/B experiment designed to increase revenue through website and marketing improvements.
+## A/B Testing Overview:
+This project analyzes an e-commerce experiment designed to evaluate marketing and website changes aimed at increasing revenue.
 
-<b>The analysis includes:</b>
+Using hypothesis prioritization frameworks and statistical testing, the analysis determines which proposed improvements should be implemented to maximize customer conversion and revenue.
+
+The project demonstrates practical data analysis techniques including exploratory data analysis, anomaly detection, and statistical hypothesis testing.
+
+### Business Problem:
+The marketing department proposed several ideas intended to increase revenue, including promotional offers, additional traffic channels, and new website features.
+
+However, testing every idea requires time and resources.
+
+The goals of this analysis were to:
 <ul>
-<li>Prioritizing marketing hypotheses using ICE and RICE frameworks</li>
+<li>Prioritize hypotheses using structured frameworks</li>
 
-<li>Running an A/B test comparing two website variations</li>
+<li>Conduct an A/B experiment comparing two versions of the platform</li>
 
-<li>Detecting anomalies in order behavior</li>
+<li>Determine whether the experimental variant improves conversion and revenue</li>
 
-Testing statistical significance of conversion and revenue differences
+<li>Identify whether anomalies affect the experiment results</li>
 </ul>
-The goal is to determine which changes should be implemented to maximize revenue.
-<br></br>
-
-### Tools and Skills Demonstrated:
-<ul>
-<li>Python</li>   
-<li>Pandas / NumPy</li>
-<li>Data cleaning</li>
-<li>Exploratory data analysis</li>
-<li>Outlier detection</li>
-<li>Hypothesis testing</li>
-<li>A/B testing methodology</li>
-<li>Data visualization</li>
-</ul>
-<b>Libraries used:</b>
-<ul>
-<li>Pandas</li>
-<li>NumPy</li>
-<li>Matplotlib</li>
-<li>Seaborn</li>
-<li>SciPy</li>
+<p></p>
 <br>
-
-## Required Project Libraries:
-| Library |Purpose |
-| --- | --- |
-| Pandas | Main library for working with data |
-| Numpy | Used for numerical operations on large quantities of data |
-| Seaborn | Python visualization library based on matplotlib |
-| Matplotlib | Python visualization library |
-| SciPy | For statistical operations |
 
 
 ## Description of the data
 <p></p>
 
-### Hypotheses table:
-| Variable | Purpose |
+### Hypotheses Dataset:
+| Column | Description |
 | --- | --- |
 | Hypotheses | Brief descriptions of the hypotheses |
 | Reach | User reach, on a scale of one to ten |
-| Impact |impact on users, on a scale of one to ten |
-| Confidence | confidence in the hypothesis, on a scale of one to ten |
-| Effort | the resources required to test a hypothesis, on a scale of one to ten. The higher the Effort value, the more resource-intensive the test |
+| Impact |Impact on users, on a scale of one to ten |
+| Confidence | Confidence in the hypothesis, on a scale of one to ten |
+| Effort | Resources required to test a hypothesis, on a scale of one to ten. The higher the Effort value, the more resource-intensive the test |
 <p>
 
-### Orders table:
-| Variable | Purpose |
+### Orders Dataset:
+| Column | Description |
 | --- | --- |
-| transactionId | order identifier |
-| visitorId | identifier of the user who placed the order |
-| date | of the order |
-| revenue | from the order |
-| group | the A/B test group that the user belongs to | 
+| transactionId | Order identifier |
+| visitorId | Identifier of the user who placed the order |
+| date | Date of order |
+| revenue | Revenue from the order |
+| group | Experiment group (A or B) | 
 <p>
 
-### Visits table: 
-| Variable | Purpose |
+### Visits Dataset: 
+| Column | Description |
 | --- | --- |
-| date | date |
-| group | A/B test group |
-| visits | the number of visits on the date specified in the A/B test group specified |
+| date | Visit date |
+| group | Experiment group |
+| visits | Number of visits |
 
 <br></br>
 
 
-## Analysis Steps:
-| Step |Description |
-| --- | --- |
-| 1 | Create project description |
-| 2 | Import libraries |
-| 3 | Upload and analyize data |
-| 4 | Data cleaning and preparation |
-| 5 | Prioritize hypothese |
-| 6 | Determining how prioritzation changes between the two models |
-| 7 | Apply A/B Testing to the models |
-| 8 | Determine the best hypothese |
-| 9 | Project Conclusion(s) |
+## Methodology
+The analysis was performed in several stages.
+
+### 1. Data Cleaning
+
+Steps included:
+<ul>
+<li>Parsing date formats</li>
+
+<li>Checking for duplicate users</li>
+
+<li>Verifying experiment group assignments</li>
+
+<li>Identifying users assigned to multiple groups</li>
+</ul>
+Users appearing in both groups were excluded from the analysis.
+
+
+
 
 <br></br>
 ## Hypotheses Gathered by Marketing Department:
@@ -329,6 +316,28 @@ P value has changed and also failed to reject hypothesis again, no conlusion fro
 **Insight:** Now that the anomalies have been removed, we can see how much things have changed. Between the groups with raw data was 13.8% with the filtered data it is now 16.8% a difference of 3%; not a significant diference but still there.
 
 On average order size with the raw data it was 25.2% and with the filtered data which removed the anomalies of the atypical orders sizes, Group B is in the negative. It just shows how much the atypical orders helped Group B out.
+
+### Tools and Skills Demonstrated:
+<ul>
+<li>Python</li>   
+<li>Pandas / NumPy</li>
+<li>Data cleaning</li>
+<li>Exploratory data analysis</li>
+<li>Outlier detection</li>
+<li>Hypothesis testing</li>
+<li>A/B testing methodology</li>
+<li>Data visualization</li>
+</ul>
+<b>Libraries used:</b>
+<ul>
+<li>Pandas</li>
+<li>NumPy</li>
+<li>Matplotlib</li>
+<li>Seaborn</li>
+<li>SciPy</li>
+<br>
+
+
 
 # Conclusion for A/B Analysis:
 Although our general conclusions from the test didn't change, using the raw vs filtered data examples demonstrates clearly how anomalies can affect A/B test results. All it takes is 2-5 huge orders to skew the comparsion between the groups.
