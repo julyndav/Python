@@ -1,27 +1,41 @@
-## A/B Testing Overview:
-This project analyzes an e-commerce experiment designed to evaluate marketing and website changes aimed at increasing revenue.
+## A/B Testing Analysis: Increasing E-Commerce Conversion & Revenue
+This project evaluates an A/B test conducted on an e-commerce platform to determine whether product and marketing changes improve conversion rates and overall revenue.
 
-Using hypothesis prioritization frameworks and statistical testing, the analysis determines which proposed improvements should be implemented to maximize customer conversion and revenue.
+Using hypothesis prioritization frameworks (ICE and RICE) alongside statistical testing, the analysis identifies high-impact business initiatives and determines whether the experimental variant should be implemented.
 
-The project demonstrates practical data analysis techniques including exploratory data analysis, anomaly detection, and statistical hypothesis testing.
+<b>Result:</b>
+Variant B delivered a statistically significant increase in conversion rate, making it the recommended rollout despite no significant change in average order value.
+<br></br>
 
-### Business Problem:
-The marketing department proposed several ideas intended to increase revenue, including promotional offers, additional traffic channels, and new website features.
 
-However, testing every idea requires time and resources.
-
-The goals of this analysis were to:
+## Business Problem:
+The marketing team proposed several initiatives to increase revenue, including:
+<ul>
+<li>Promotional campaigns</li>
+<li>New traffic acquisition channels</li>
+<li>Website feature enhancements</li>
+</ul>
+However, testing all ideas requires time and resources.
+<p></p>
+<b>Objectives:</b>
 <ul>
 <li>Prioritize hypotheses using structured frameworks</li>
-
-<li>Conduct an A/B experiment comparing two versions of the platform</li>
-
-<li>Determine whether the experimental variant improves conversion and revenue</li>
-
-<li>Identify whether anomalies affect the experiment results</li>
+<li>Evaluate performance through A/B testing</li>
+<li>Measure impact on conversion and revenue</li>
+<li>Identify and control for data anomalies</li>
 </ul>
-<p></p>
-<br>
+<br></br>
+
+## Key Insights:
+<ul>
+<li>Conversion rate increased by 13.8%–16.8% in Variant B</li>
+<li>Results are statistically significant (p < 0.05)</li>
+<li>No statistically significant difference in average order value</li>
+<li>A small number of high-value orders significantly skewed revenue metrics</li>
+<li>Final recommendation: Deploy Variant B</li>
+</ul>
+<br></br>
+
 
 
 ## Description of the data
