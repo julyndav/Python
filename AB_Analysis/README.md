@@ -24,8 +24,8 @@ However, testing all ideas requires time and resources.
 <li>Measure impact on conversion and revenue</li>
 <li>Identify and control for data anomalies</li>
 </ul>
-<br></br>
-
+<br>
+  
 ## Key Insights:
 <ul>
 <li>Conversion rate increased by 13.8%–16.8% in Variant B</li>
@@ -35,8 +35,6 @@ However, testing all ideas requires time and resources.
 <li>Final recommendation: Deploy Variant B</li>
 </ul>
 <br></br>
-
-
 
 ## Description of the data
 <p></p>
@@ -71,23 +69,14 @@ However, testing all ideas requires time and resources.
 <br></br>
 
 
-## Methodology
-The analysis was performed in several stages.
-
+## Approach
 ### 1. Data Cleaning
-
-Steps included:
 <ul>
-<li>Parsing date formats</li>
-
-<li>Checking for duplicate users</li>
-
-<li>Verifying experiment group assignments</li>
-
-<li>Identifying users assigned to multiple groups</li>
+<li>Parsed and standardized date formats</li>
+<li>Identified and removed duplicate users</li>
+<li>Detected users assigned to both test groups (data integrity issue)</li>
+<li>Excluded invalid users to preserve experiment validity</li>
 </ul>
-Users appearing in both groups were excluded from the analysis.
-
 
 
 
