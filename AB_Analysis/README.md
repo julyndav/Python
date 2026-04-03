@@ -85,6 +85,8 @@ These datasets track user behavior, transactions, and experiment group assignmen
 <li>ICE = (Impact × Confidence) / Effort</li>
 <li>RICE = (Reach × Impact × Confidence) / Effort</li>
 </ul>
+
+![comparison](https://github.com/julyndav/Python/blob/main/AB_Analysis/images/comparison.png)
 <b>Key Insights:</b>
 <ul>
 <li>Top-performing hypotheses: #7, #0, #2, #6, #8</li>
@@ -117,6 +119,7 @@ Strong evidence that Variant B improves user conversion
 <p></p>
 
 ### Outlier Analysis
+![OutliersPrice](https://github.com/julyndav/Python/blob/main/AB_Analysis/images/order_by_prices.png)
 <ul>
 <li>Identified extreme high-value orders (>$20K and ~$2.5K)</li>
 <li>1% of users contributed disproportionately to revenue</li>
