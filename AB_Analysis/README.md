@@ -134,5 +134,34 @@ A small number of anomalous transactions can significantly distort A/B test resu
 <li>Revenue gains are driven by increased conversions, not order size</li>
 <li>Results remain valid even after removing anomalies</li>
 </ul>
-
 While large orders influenced revenue metrics, they did not alter the overall conclusion.
+<p></p>
+
+### Key Takeaways
+<ul>
+<li>Conversion rate is a more reliable success metric than revenue alone</li>
+<li>Outliers can significantly distort experimental results</li>
+<li>Structured prioritization frameworks improve decision-making</li>
+<li>Statistical validation is critical before implementing changes</li>
+</ul>
+<br></br>
+
+## Tools & Skills Demonstrated
+<b>Languages & Libraries:</b>
+<ul>
+<li>Python</li>
+<li>Pandas, NumPy</li>
+<li>Matplotlib, Seaborn</li>
+<li>SciPy</li>
+</ul>
+<p></p>
+
+<b>Core Skills:</b>
+<ul>
+<li>Data cleaning & preprocessing</li>
+<li>Exploratory data analysis (EDA)</li>
+<li>Outlier detection & handling</li>
+<li>Hypothesis prioritization (ICE/RICE)</li>
+<li>Statistical hypothesis testing</li>
+<li>A/B testing methodology</li>
+<li>Data visualization</li>
