@@ -37,7 +37,8 @@ However, testing all ideas requires time and resources.
 Increasing conversion rate—even without higher order values—can drive meaningful revenue growth, making Variant B a high-impact, low-risk implementation.
 <br>
 
-## Description of the data
+## Data Description
+These datasets track user behavior, transactions, and experiment group assignment across the testing period.
 <p></p>
 
 ### Hypotheses Dataset:
