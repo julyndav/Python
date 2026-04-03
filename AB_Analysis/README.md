@@ -144,7 +144,7 @@ While large orders influenced revenue metrics, they did not alter the overall co
 <li>Structured prioritization frameworks improve decision-making</li>
 <li>Statistical validation is critical before implementing changes</li>
 </ul>
-<br></br>
+<br>
 
 ## Tools & Skills Demonstrated
 <b>Languages & Libraries:</b>
