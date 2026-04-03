@@ -112,78 +112,27 @@ However, testing all ideas requires time and resources.
 <li>P-value: 0.0136 (filtered data)</li>
 </ul>
 Strong evidence that Variant B improves user conversion
-<br></br>
-
-# Analysis Overview:
-### Prioritizing the Hypothesis:
-Here's a look at the hypotheses: 
- ![hypotheses](https://github.com/julyndav/Python/blob/main/AB_Analysis/images/hypotheses.png)
-<p></p>
-Now to take the scores for the hypotheses and see which ones have the potential of giving the highest return on revenue.
 <p></p>
 
- #### ICE: 
- <ul>
-   <li>ICE = (Impact* Confidence)/Effort</li>
-   <li>Once ICE was calculated, the hyptheses were sorted based on ICE score.</li>
- </ul>
-<b>Insight:</b>
-8, 0, 7 6 and 2 where the top hypotheses with 8 being number one with 16.2. Launch a promotion that gives users discounts on their birthdays<b>(16.2)</b> and adding two new channels for attracting traffic<b>(13.3)</b> are the top picks<p></p>
-
-#### RICE:
+### Outlier Analysis
 <ul>
-   <li>RICE = (Impact*Reach*Confidence)/Effort</li>
-   <li>Once ICE was calculated, the hyptheses were sorted based on RICE score.</li>
- </ul>
-<b>Insight:</b>
-7, 2 , 0, 6, 8 were the top hypotheses with 0 and 6 having the same RICE score. 8 fell from 1st with ICE to the bottom of the top 5. 6 didn't change position, 7 and 0 are the only two that remained in the top 3.<p></p>
-
-![ice_rice](https://github.com/julyndav/Python/blob/main/AB_Analysis/images/comparison.png)
-
-### Conclusion for Prioritizing Hypotheses:
-From both of the ICE and RICE plots, we get a better visual of how the two represent the hypotheses presented. We can see that numbers 3, 4 and 5 can be dropped; they performed poorly on both spectrums. Changing the category structure(#3), background color(#4) and adding a customer review page(#5) would have no significant effects customer base or revenue. These seem to be 'cosmetic' changes.
-
-The 5 Hypotheses that should be focused on are numbers 7, 0, 2, 6 and 8. From those 5, the top three would be 7, 8 and 0. Hypothesis 7 maintained good standing in both ICE and RICE categories. Subscription forms are an excellent way to retain current visitors and give new visitors more insights into what the company is doing and has to offer.
-
-Promotional discounts(#8) and adding channels to bring in more traffic(#0) both garner focus in increasing customer base and revenue. Even though (#8) performed poorly in terms of RICE; it did so well in the ICE category that it brought it in line with the second best hypothesis(#0). Reaching more visitors and giving discounts have been proven industry actioons in increasing customer base and revenue potential.
-<br></br>
-
-## A/B Test Analysis
-
-| Cummulative Revenue by Group     | Cumulative Average Order Size by Group      | 
-| ----------------------------------- | ----------------------------------- | 
-![rev_grp](https://github.com/julyndav/Python/blob/main/AB_Analysis/images/c_rev_grp.png) | ![avg_os](https://github.com/julyndav/Python/blob/main/AB_Analysis/images/c_order_group.png) | 
-
-<p></p>
-<b>Cummulative Insights:</b> Once again Group B has exceeded Group A results and at the same time frame of 2019-8-17 which is where Group B spiked. After B's spike, it is slowing trending downward. Group A, once it had reached it's peak at 2019-8-13, it seems to level off and stay constent.<p>
-  
-When reviewing the relative difference in order size between the groups, there are 2 points where the difference between the groups spikes. There must be some abnormally large orders placed. This will be looked into further in the analysis process.
-<p></p>
-
-### Tools and Skills Demonstrated:
-<ul>
-<li>Python</li>   
-<li>Pandas / NumPy</li>
-<li>Data cleaning</li>
-<li>Exploratory data analysis</li>
-<li>Outlier detection</li>
-<li>Hypothesis testing</li>
-<li>A/B testing methodology</li>
-<li>Data visualization</li>
+<li>Identified extreme high-value orders (>$20K and ~$2.5K)</li>
+<li>1% of users contributed disproportionately to revenue</li>
+<li>Removing outliers:</li>
+  <ul>
+  <li>Increased conversion clarity</li>
+<li>Eliminated artificial inflation of AOV</li></ul>
 </ul>
-<b>Libraries used:</b>
+<b>Key Insight:</b>
+A small number of anomalous transactions can significantly distort A/B test results.
+<br></br>
+
+## Conclusion for A/B Analysis:
+### Deploy Variant B
 <ul>
-<li>Pandas</li>
-<li>NumPy</li>
-<li>Matplotlib</li>
-<li>Seaborn</li>
-<li>SciPy</li>
-<br>
+<li>Conversion rate improvements are statistically significant and consistent</li>
+<li>Revenue gains are driven by increased conversions, not order size</li>
+<li>Results remain valid even after removing anomalies</li>
+</ul>
 
-
-
-# Conclusion for A/B Analysis:
-Although our general conclusions from the test didn't change, using the raw vs filtered data examples demonstrates clearly how anomalies can affect A/B test results. All it takes is 2-5 huge orders to skew the comparsion between the groups.
-Between the raw and filtered, Group B showed gains on Group A except were the order size was concerend. Removing the abnormally large orders, which caused the massive spike in the plot for 'Average Order size' for Group B, negated Group B's gain that it had on Group A in that category.
-
-Based on the overall results, I would suggest ending the test and going with Group B. Despite Group B's anomalies, they still garned the large orders from a few visitors which boosted the Groups revenue. It's obvious that the tested hypotheses of numbers 7, 0 and 8 really resonated with Group B
+While large orders influenced revenue metrics, they did not alter the overall conclusion.
