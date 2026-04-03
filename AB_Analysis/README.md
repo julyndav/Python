@@ -1,7 +1,5 @@
 ## A/B Testing Analysis: Increasing E-Commerce Conversion & Revenue
-This project evaluates an A/B test conducted on an e-commerce platform to determine whether product and marketing changes improve conversion rates and overall revenue.
-
-Using hypothesis prioritization frameworks (ICE and RICE) alongside statistical testing, the analysis identifies high-impact business initiatives and determines whether the experimental variant should be implemented.
+This analysis evaluates an A/B test on an e-commerce platform to determine whether product and marketing changes improve conversion rates and revenue.
 
 <b>Result:</b>
 Variant B delivered a statistically significant increase in conversion rate, making it the recommended rollout despite no significant change in average order value.
@@ -34,6 +32,9 @@ However, testing all ideas requires time and resources.
 <li>A small number of high-value orders significantly skewed revenue metrics</li>
 <li>Final recommendation: Deploy Variant B</li>
 </ul>
+  
+**Business Impact:**  
+Increasing conversion rate—even without higher order values—can drive meaningful revenue growth, making Variant B a high-impact, low-risk implementation.
 <br>
 
 ## Description of the data
@@ -127,7 +128,7 @@ Strong evidence that Variant B improves user conversion
 A small number of anomalous transactions can significantly distort A/B test results.
 <br></br>
 
-## Conclusion for A/B Analysis:
+## Final Recommendation:
 ### Deploy Variant B
 <ul>
 <li>Conversion rate improvements are statistically significant and consistent</li>
