@@ -90,84 +90,33 @@ However, testing all ideas requires time and resources.
 <li>Low-impact UI changes consistently ranked lowest</li>
 </ul>
 <b>Takeaway:</b> Initiatives that increase traffic and user engagement provide the greatest revenue potential
-
 <br></br>
-## Hypotheses Gathered by Marketing Department:
+
+
+## A/B Test Analysis
+<p></p>
+
+### Key Metrics Evaluated:
 <ul>
-<li>Add two new channels for attracting traffic. This will bring 30% more users</li>
-<li>Launch your own delivery service. This will shorten delivery time</li>
-<li>Add product recommendation blocks to the store's site. This will increase conversion and average purchase size</li>
-<li>Change the category structure. This will increase conversion since users will find the products they want more quickly</li>
-<li>Change the background color on the main page. This will increase user engagement</li>
-<li>Add a customer review page. This will increase the number of orders
-<li>Show banners with current offers and sales on the main page. This will boost conversion
-<li>Add a subscription form to all the main pages. This will help you compile a mailing list
-<li>Launch a promotion that gives users discounts on their birthdays
-</li>
+<li>Conversion rate</li>
+<li>Average order value (AOV)</li>
+<li>Revenue trends</li>
+<li>User behavior patterns</li>
 </ul>
+<p></p>
 
+### Conversion Rate (Primary Metric)
+<ul>
+<li>Statistically significant improvement in Variant B</li>
+<li>P-value: 0.0168 (raw data)</li>
+<li>P-value: 0.0136 (filtered data)</li>
+</ul>
+Strong evidence that Variant B improves user conversion
 <br></br>
+
 # Analysis Overview:
-
-## Data Cleaning and Preparation:
-<OL>
-<li> After initial review of Hypotheses table, there was no data cleaning or processing needed for the hypotheses dataframe.</li>
-<li>Orders table:</li>
-<UL>
-<li>Code was adjusted in importing datasets by the use of 'parse' for the date.</li>
-<li>Duplicates where checked in the 'visitorID' column. Duplicates were dropped.</li>   
-</UL>
-<li>Visits table:
-  <ul>
-    <li>After first inital running of visits df, group and date columns were object data types.</li>
-    <li>Code was adjusted in importing datasets by the use of 'parse' and dtype.</li>
-  </ul>
-</OL>
-<p></p>
-
-### Group Check
-There might be mistakes in the original datasets; for example, some of the visitors might have gotten into both group A and group B. Now to check the visior df. Going off of first visits, we'll see if any visitors are in both groups.<p>
-<ul>
-  <li>Review 'orders' table.</li>
-  <li>Find the first group each user has visited 'first_group'.</li>
-  <li>Merge first visit group with 'orders' df to see if visitor has been to another group.</li>
-
-
-![user_groups](https://github.com/julyndav/Python/blob/main/AB_Analysis/images/AB%20Groups.png)<p>
-<li> We can see from the third transaction, that the visitor has been in two groups. This is what we wanted to detect.</li>
-<li>Using '.value_counts' function, the number of occurrences for each user was listed. </li>
-</ul>
-
-#### Let's finalize the groups!
-![user_grp_complete](https://github.com/julyndav/Python/blob/main/AB_Analysis/images/AB%20Groups_2.png)
-
-<i> 937 rows x 5 columns</i>
-
-<li>Group B: 510 visitors.</li>
-<li>Group A: 427 visitors.</li>
-<br>
-
-## Prioritizing the Hypothesis:
-The file hypotheses_us.csv contains nine hypothesis on boosting an online store's revenue with Reach, Impact, Confidence, and Effort (aka RICE) specified for each.
-
-RICE has four components:
-<ul>
-<li>Reach — how many users will be affected by the update you want to introduce</li>
-<li>Impact — how strongly this update will affect the users, their experience, and their satisfaction with the product</li>
-<li>Confidence — how sure you are that your product will affect them in this way</li>
-<li>Effort — how much will it cost to test the hypothesis</li>
-</ul>
-<p></p>
-
-#### The task is to:
-<ul>
-<li>Apply the ICE framework to prioritize hypothesis. Sort them in descending order of priority.</li>
-<li>Apply the RICE framework to prioritize hypothesis. Sort them in descending order of priority.</li>
-<li>Show how the prioritization of hypothesis changes when you use RICE instead of ICE. Provide an explanation for the changes.</li>
-</ul>
-<p></p>
-
- Here's a look at the hypotheses: 
+### Prioritizing the Hypothesis:
+Here's a look at the hypotheses: 
  ![hypotheses](https://github.com/julyndav/Python/blob/main/AB_Analysis/images/hypotheses.png)
 <p></p>
 Now to take the scores for the hypotheses and see which ones have the potential of giving the highest return on revenue.
@@ -191,10 +140,6 @@ Now to take the scores for the hypotheses and see which ones have the potential 
 
 ![ice_rice](https://github.com/julyndav/Python/blob/main/AB_Analysis/images/comparison.png)
 
-Now to compare the results of both the ICE and RICE analysis:
-
-![comp_icerice](https://github.com/julyndav/Python/blob/main/AB_Analysis/images/ice_rice.png)
-
 ### Conclusion for Prioritizing Hypotheses:
 From both of the ICE and RICE plots, we get a better visual of how the two represent the hypotheses presented. We can see that numbers 3, 4 and 5 can be dropped; they performed poorly on both spectrums. Changing the category structure(#3), background color(#4) and adding a customer review page(#5) would have no significant effects customer base or revenue. These seem to be 'cosmetic' changes.
 
@@ -204,41 +149,6 @@ Promotional discounts(#8) and adding channels to bring in more traffic(#0) both 
 <br></br>
 
 ## A/B Test Analysis
-#### Steps for the A/B analysis:
-1. Graph cumulative revenue by group.  
-2. Graph cumulative average order size by group.
-3. Graph the relative difference in cumulative average order size for group B compared with group A. 
-4. Calculate each group's conversion rate as the ratio of orders to the number of visits for each day. Plot the daily conversion rates of the two groups and describe the difference. 
-5. Plot a scatter chart of the number of orders per user. 
-6. Calculate the 95th and 99th percentiles for the number of orders per user. Define the point at which a data point becomes an anomaly.
-7. Plot a scatter chart of order prices. 
-8. Calculate the 95th and 99th percentiles of order prices. Define the point at which a data point becomes an anomaly.
-9. Find the statistical significance of the difference in conversion between the groups using the raw data. 
-10. Find the statistical significance of the difference in average order size between the groups using the raw data. 
-11. Find the statistical significance of the difference in conversion between the groups using the filtered data. 
-12. Find the statistical significance of the difference in average order size between the groups using the filtered data. 
-<p></p>
-
-#### Cumulative revenue by group. 
-<ul>
-  <li>Using the table/dataframe that was created from filtering users in multiple groups.</li>
-  <li>An array is built ('datesGroups') with unique paried date-group values.</li>
-  <li>The newly created 'datesGroup' table is used in conjunction with the 'visits' df to create a table that will bring together the 'Group', 'date', and how many visits per group.</li>
-  <li>The 'orders' table is also grouped together on 'date, and 'group'. From that grouping, totals are aggregated for the number of 'transactionIDs', 'visitorIDs' and total revenue for each date.</li>
-  
-  <p></p>
-
-   ![visit_grps](https://github.com/julyndav/Python/blob/main/AB_Analysis/images/visit_group.png)
-   ![visit_grps](https://github.com/julyndav/Python/blob/main/AB_Analysis/images/orders_group.png)
-   
-   <i> 'visits' table followed by the 'orders' table giving a glimpse at the daily revenues.</i><p>
-   <li>The two tables are combined on the date/group values. The resulting df is named 'cumulativeData'</li>
-   <li>Once the tables are combined, 'Revenue by Group' can be plotted with each group being separated.</li>
-</ul>
-<p></p>
-
-#### 2.Cumulative average order size by group
-<i> No new data frames need to be created. The 'cumulativeData' df will be used to determine the average order size per group.</i>
 
 | Cummulative Revenue by Group     | Cumulative Average Order Size by Group      | 
 | ----------------------------------- | ----------------------------------- | 
