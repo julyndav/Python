@@ -34,7 +34,7 @@ However, testing all ideas requires time and resources.
 <li>A small number of high-value orders significantly skewed revenue metrics</li>
 <li>Final recommendation: Deploy Variant B</li>
 </ul>
-<br></br>
+<br>
 
 ## Description of the data
 <p></p>
@@ -65,9 +65,7 @@ However, testing all ideas requires time and resources.
 | date | Visit date |
 | group | Experiment group |
 | visits | Number of visits |
-
-<br></br>
-
+<br>
 
 ## Approach
 ### 1. Data Cleaning
@@ -77,8 +75,21 @@ However, testing all ideas requires time and resources.
 <li>Detected users assigned to both test groups (data integrity issue)</li>
 <li>Excluded invalid users to preserve experiment validity</li>
 </ul>
+<p></p>
 
-
+### 2. Hypothesis Prioritization (ICE vs RICE)
+<b>Frameworks used:</b>
+<ul>
+<li>ICE = (Impact × Confidence) / Effort</li>
+<li>RICE = (Reach × Impact × Confidence) / Effort</li>
+</ul>
+<b>Key Insights:</b>
+<ul>
+<li>Top-performing hypotheses: #7, #0, #2, #6, #8</li>
+<li>Hypotheses focused on traffic growth and promotions ranked highest</li>
+<li>Low-impact UI changes consistently ranked lowest</li>
+</ul>
+<b>Takeaway:</b> Initiatives that increase traffic and user engagement provide the greatest revenue potential
 
 <br></br>
 ## Hypotheses Gathered by Marketing Department:
