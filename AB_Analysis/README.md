@@ -1,9 +1,7 @@
 ## A/B Testing Analysis: Increasing E-Commerce Conversion & Revenue
-This analysis evaluates an A/B test on an e-commerce platform to determine whether product and marketing changes improve conversion rates and revenue.
+This analysis evaluates an A/B test on an e-commerce platform to determine whether marketing and UX changes (Variant B) improve conversion rate and revenue relative to the control (Variant A).
 
-<b>Result:</b>
-Variant B delivered a statistically significant increase in conversion rate, making it the recommended rollout despite no significant change in average order value.
-<br></br>
+<b>Result:</b> Variant B delivered a statistically significant increase in conversion rate — consistent both before and after removing anomalous users — making it the recommended rollout, despite no significant change in average order value.
 
 
 ## Business Problem:
